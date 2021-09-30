@@ -1,2 +1,2 @@
-# Yoico Space - Community Living Experiences
+# Stadorm - Community Living Experiences
 A Full Stack Project for Online Room/Apartment Booking.
