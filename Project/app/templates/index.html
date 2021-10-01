@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,8 +14,8 @@
     <link rel="apple-touch-icon" href="logo192.html" />
     <link rel="manifest" href="manifest.json" />
     <title>Yoico Space - Community Living Experiences</title>
-    <link href="static/css/chunk.css" rel="stylesheet" />
-    <link href="static/css/main.css" rel="stylesheet" />
+    <link href="{%  static '/css/chunk.css' %}" rel="stylesheet" />
+    <link href="{%  static '/css/main.css' %}" rel="stylesheet" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -167,7 +169,7 @@
         t();
       })([]);
     </script>
-    <script src="static/js/web.js"></script>
-    <script src="static/js/main.js"></script>
+    <script src="{%  static '/js/web.js' %}"></script>
+    <script src="{%  static '/js/main.js' %}"></script>
   </body>
   </html>
