@@ -15249,7 +15249,7 @@
                       }),
                       Object(d.jsxs)("form", {
                         className: "grid grid-cols-1 gap-6",
-                        action: "#",
+                        action: "login",
                         method: "post",
                         children: [
                           Object(d.jsxs)("label", {

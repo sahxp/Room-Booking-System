@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="{%  static 'favicon.ico' %}" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -12,7 +12,7 @@
       content="An Affordable Co-Living Space for Students & Working Professionals."
     />
     <link rel="apple-touch-icon" href="logo192.html" />
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="{%  static 'manifest.json' %}" />
     <title>Yoico Space - Community Living Experiences</title>
     <link href="{%  static '/css/chunk.css' %}" rel="stylesheet" />
     <link href="{%  static '/css/main.css' %}" rel="stylesheet" />
@@ -171,5 +171,8 @@
     </script>
     <script src="{%  static '/js/web.js' %}"></script>
     <script src="{%  static '/js/main.js' %}"></script>
+    <script>
+    var CSRF_TOKEN = '{{ csrf_token }}';
+    </script>
   </body>
   </html>
