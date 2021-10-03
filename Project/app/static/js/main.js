@@ -16543,7 +16543,7 @@
           });
         },
         Pr = [
-          { path: "/", exact: !0, component: Yt },
+          { path: "/:userId/:username", exact: !0, component: Yt },
           { path: "/#", exact: !0, component: Yt },
           { path: "/listing-stay", component: Ia },
           { path: "/listing-stay-map", component: Pa },
