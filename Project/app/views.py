@@ -15,3 +15,6 @@ def login(request):
 
 def home(request,userId, username):
     return render(request,'index.html')
+
+def listing_stay(request):
+    return render(request,'index.html')
