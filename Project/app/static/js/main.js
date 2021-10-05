@@ -73,12 +73,12 @@
           var t = e.img,
             a =
               void 0 === t
-                ? "https://yoico.in/img/yoi-fav.png"
+                ? "https://vazaci.web.app/static/media/stadorm.png"
                 : t,
             s = e.imgLight,
             r =
               void 0 === s
-                ? "https://yoico.in/img/yoi-fav.png"
+                ? "https://vazaci.web.app/static/media/stadorm-light.png"
                 : s,
             c = e.className,
             i = void 0 === c ? "" : c;
