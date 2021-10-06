@@ -14904,7 +14904,7 @@
                         Object(d.jsx)("div", {
                           children: Object(d.jsxs)("form", {
                             className: "grid grid-cols-1 gap-6",
-                            action: "#",
+                            action: "/",
                             method: "post",
                             children: [
                               Object(d.jsxs)("label", {
@@ -15249,7 +15249,7 @@
                       }),
                       Object(d.jsxs)("form", {
                         className: "grid grid-cols-1 gap-6",
-                        action: "./",
+                        action: "/",
                         method: "post",
                         children: [
                           Object(d.jsxs)("label", {
@@ -15376,7 +15376,7 @@
                       }),
                       Object(d.jsxs)("form", {
                         className: "grid grid-cols-1 gap-6",
-                        action: "#",
+                        action: "/login/",
                         method: "post",
                         children: [
                           Object(d.jsxs)("label", {
@@ -15389,6 +15389,7 @@
                               }),
                               Object(d.jsx)(pe, {
                                 type: "email",
+                                name: "email",
                                 placeholder: "example@example.com",
                                 className: "mt-1",
                               }),
@@ -15411,6 +15412,7 @@
                               }),
                               Object(d.jsx)(pe, {
                                 type: "password",
+                                name: "password",
                                 className: "mt-1",
                               }),
                             ],
@@ -16541,7 +16543,7 @@
           });
         },
         Pr = [
-          { path: "/", exact: !0, component: Yt },
+          { path: "/:userId/:username", exact: !0, component: Yt },
           { path: "/#", exact: !0, component: Yt },
           { path: "/listing-stay", component: Ia },
           { path: "/listing-stay-map", component: Pa },
