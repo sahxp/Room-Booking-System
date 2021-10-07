@@ -1,2 +1,5 @@
 venv/pyvenv.cfg
 venv
+Project/app/__pycache__
+Project/Project/__pycache__
+Project/app/migrations/__pycache__
