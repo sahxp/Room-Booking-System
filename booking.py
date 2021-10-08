@@ -1,35 +1,16 @@
 import mysql.connector
-from django.shortcuts import render, redirect
-import pyautogui as pag
 
-def login_page(request):
-    if request.method == 'POST':
-        email = request.POST.get("email")
-        password = request.POST.get("password")
-
-        db = mysql.connector.connect(
-            host='localhost',
+db = mysql.connector.connect(
+            host='127.0.0.1',
             username='root',
-            password='Decent@124',
-            database='movierecommendation'
+            password='',
+            database='booking system'
         ) 
 
-        cur = db.cursor()
+cur = db.cursor()
 
-        sql = "select * from movierecommendation.users where users.email = '"+email+"';"
+sql = "select * from user';"
 
-        cur.execute(sql)
-        a = cur.fetchall()
-        if len(a) ==0:
-            pag.alert(text="Email Id Not registered")
-            return redirect('/')
-        user_id = a[0][0]
-        db_pass = a[0][2]
-        username = a[0][3]
-        if db_pass == password:
-            pag.alert("You are logged in!")
-            return redirect('home/'+str(user_id)+'/'+username)
-        else:
-            pag.alert("Wrong Password!")
-
-    return render(request, 'login.html')
+cur.execute(sql)
+a = cur.fetchall()
+print(a)
