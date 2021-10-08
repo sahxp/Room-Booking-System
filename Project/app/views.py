@@ -14,10 +14,13 @@ def login(request):
     return render(request,'login.html')
 
 def signup(request):
+    if (request.method == 'POST'):
+        email = request.POST.get("customer[email]")
+        password = request.POST.get("customer[email]")
     return render(request,'signup.html')
 
 def home(request,userId, username):
     return render(request,'index.html')
 
-def details(request,userId,username,roomId):
+def details(request,userId,username,productId):
     return render(request,'details.html')
