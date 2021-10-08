@@ -19,5 +19,8 @@ def signup(request):
 def home(request,userId, username):
     return render(request,'index.html')
 
+def details(request,userId,username,roomId):
+    return render(request,'details.html')
+
 def listing_stay(request):
     return render(request,'index.html')
