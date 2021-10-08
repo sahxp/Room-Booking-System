@@ -136,8 +136,8 @@
                 <div class="signup-page__form">
                     <h2 class="signup-page__title">Sign Up</h2>
                     <p class="signup-page__desc">Create an account to manage your orders or subscriptions. <br/><br/> If you've already made an order or started a subscription, simply use the email address attached to that order to connect it with your account.</p>
-                    <form method="post" action="/account" id="create_customer" accept-charset="UTF-8"><input type="hidden" name="form_type" value="create_customer" /><input type="hidden" name="utf8" value="✓" />
-                    
+                    <form method="post" action="" id="create_customer" accept-charset="UTF-8"><input type="hidden" name="form_type" value="create_customer" /><input type="hidden" name="utf8" value="✓" />
+                    {% csrf_token %}
                     <div class="field-group">
                         <fieldset class="field">
                             <label class="field__label" for="first_name">First Name</label>
