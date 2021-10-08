@@ -7525,83 +7525,7 @@
       sr = document.querySelectorAll(Ri),
       ar = document.querySelectorAll(Fi);
 
-  function lr(t) {
-      bi.a.ajax({
-          type: "GET",
-          url: "/cart.js",
-          dataType: "json",
-          success: function(e) {
-              ! function(t) {
-                  Zi.innerHTML = t.item_count, t.item_count > 0 ? (ir.style.display = "block", or.style.display = "none") : (ir.style.display = "none", or.style.display = "block")
-              }(e), 0 === e.item_count ? (! function() {
-                  gr(), Ui.innerHTML = '\n\t<div class="ajax-cart-empty">\n\t\t<div class="ajax-cart-empty__wrapper">\n\t\t\t<svg class="ajax-cart-empty__icon" height="32" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">\n\t\t\t\t<path d="M12.5 0C9.06621 0 6.25082 2.59916 6.25082 5.76923H2.0847C1.53138 5.76923 1.07571 6.16737 1.04317 6.67818L0.00163698 23.9859C-0.0146359 24.2488 0.091144 24.5117 0.286431 24.6995C0.481718 24.8948 0.758373 25 1.04317 25H23.9568C24.2416 25 24.5183 24.8948 24.7136 24.6995C24.9089 24.5117 25.0146 24.2488 24.9984 23.9859L23.9568 6.67818C23.9243 6.16737 23.4686 5.76923 22.9153 5.76923H18.7492C18.7492 2.59916 15.9338 0 12.5 0ZM12.5 1.92308C14.7946 1.92308 16.6661 3.65084 16.6661 5.76923H8.33388C8.33388 3.65084 10.2054 1.92308 12.5 1.92308ZM3.06927 7.69231H6.25082V11.5385H8.33388V7.69231H16.6661V11.5385H18.7492V7.69231H21.9307L22.8502 23.0769H2.14979L3.06927 7.69231Z" fill="#21262E"/>\n\t\t\t\t<circle cx="22.5" cy="7.5" r="7.5" fill="#262626"/>\n\t\t\t\t<path d="M22.4964 11.12C21.9164 11.12 21.3998 10.9767 20.9464 10.69C20.4931 10.4033 20.1364 9.99 19.8764 9.45C19.6231 8.90333 19.4964 8.25333 19.4964 7.5C19.4964 6.74667 19.6231 6.1 19.8764 5.56C20.1364 5.01333 20.4931 4.59667 20.9464 4.31C21.3998 4.02333 21.9164 3.88 22.4964 3.88C23.0764 3.88 23.5931 4.02333 24.0464 4.31C24.4998 4.59667 24.8531 5.01333 25.1064 5.56C25.3664 6.1 25.4964 6.74667 25.4964 7.5C25.4964 8.25333 25.3664 8.90333 25.1064 9.45C24.8531 9.99 24.4998 10.4033 24.0464 10.69C23.5931 10.9767 23.0764 11.12 22.4964 11.12ZM22.4964 9.75C22.9231 9.75 23.2564 9.56667 23.4964 9.2C23.7431 8.83333 23.8664 8.26667 23.8664 7.5C23.8664 6.73333 23.7431 6.16667 23.4964 5.8C23.2564 5.43333 22.9231 5.25 22.4964 5.25C22.0764 5.25 21.7431 5.43333 21.4964 5.8C21.2564 6.16667 21.1364 6.73333 21.1364 7.5C21.1364 8.26667 21.2564 8.83333 21.4964 9.2C21.7431 9.56667 22.0764 9.75 22.4964 9.75Z" fill="#F5F6F9"/>\n\t\t\t</svg>\n\t\t\t<div class="ajax-cart-empty__text">Your bag is empty!</div>\n\t\t\t<div class="ajax-cart-empty__desc">Looks like your shopping bag is empty, give it some love!</div>\n\t\t\t<!--<div class="ajax-cart-empty__button button js-ajax-cart-drawer-close">Continue Shopping</div>-->\n\t\t</div>\n\t</div> ', bi()(".js-ajax-cart-drawer-close").click((function() {
-                      vr(), br()
-                  }))
-              }(), er.classList.add("is-hidden")) : (! function(t) {
-                  gr(), t.items.forEach((function(t, e) {
-                          var n = function(t, e) {
-                              return '\n\t\t<div class="ajax-cart-line-item" data-line="'.concat(Number(e + 1), '">\n\t\t\t<div class="ajax-cart-line-item__container">\n\t\t\t\t<div class="ajax-cart-line-item__image">\n\t\t\t\t\t<img class="lazyload" data-src="').concat(t.image, '" alt="Product Image"/>\n\t\t\t\t</div>\n\t\t\t\t<div class="ajax-cart-line-item__info">\n\t\t\t\t\t<div class="ajax-cart-line-item__titles" data-line="').concat(Number(e + 1), '">\n\t\t\t\t\t<div>\n\t\t\t\t\t<a href="').concat(t.url, '" class="ajax-cart-line-item__title">').concat(t.product_title, "</a>\n\t\t\t\t\t").concat("patches" === t.product_type ? '<p class="ajax-cart-line-item__desc">Bio-Frequency Patches</p>' : "", "\n\t\t\t\t\t").concat(void 0 !== t.selling_plan_allocation ? '<p class="ajax-cart-line-item__sub"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">\n\t\t\t\t\t\t\t\t<path d="M6 0C2.69351 0 0 2.68997 0 5.99819V6.44652H0.923077V5.99819C0.923077 3.19253 3.19111 0.92558 6 0.92558C7.50721 0.92558 8.85216 1.58723 9.77885 2.6285L8.73678 3.66978H12V0.408557L10.4315 1.97409C9.33534 0.766496 7.75962 0 6 0ZM11.0769 5.52094V5.98373C11.0769 8.80024 8.80889 11.0744 6 11.0744C4.48558 11.0744 3.14063 10.4055 2.21034 9.35342L3.26322 8.29768H0V11.5697L1.55769 10.0078C2.65745 11.2263 4.23678 12 6 12C9.3101 12 12 9.3028 12 5.98373V5.52094H11.0769Z" fill="#262626"/>\n\t\t\t\t\t\t\t\t</svg><span>'.concat(t.selling_plan_allocation.selling_plan.name, "</span></p>") : '<p class="ajax-cart-line-item__sub"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">\n\t\t\t\t\t\t<path d="M6 0C2.69351 0 0 2.68997 0 5.99819V6.44652H0.923077V5.99819C0.923077 3.19253 3.19111 0.92558 6 0.92558C7.50721 0.92558 8.85216 1.58723 9.77885 2.6285L8.73678 3.66978H12V0.408557L10.4315 1.97409C9.33534 0.766496 7.75962 0 6 0ZM11.0769 5.52094V5.98373C11.0769 8.80024 8.80889 11.0744 6 11.0744C4.48558 11.0744 3.14063 10.4055 2.21034 9.35342L3.26322 8.29768H0V11.5697L1.55769 10.0078C2.65745 11.2263 4.23678 12 6 12C9.3101 12 12 9.3028 12 5.98373V5.52094H11.0769Z" fill="#262626"/>\n\t\t\t\t\t\t</svg><span>ONE-TIME</span></p>', '\n\t\t\t\t\t</div>\n\t\t\t\t\t<a class="ajax-cart-line-item__remove ').concat(Oi, '">\n\t\t\t\t\t\t<svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">\n\t\t\t\t\t\t\t<path opacity="0.25" d="M5.78306 0C4.78874 0 3.96962 0.83173 3.96962 1.84135V2.46154H0.333252V3.69231H1.54537V14.1538C1.54537 15.1683 2.3645 16 3.36355 16H10.6363C11.6353 16 12.4545 15.1683 12.4545 14.1538V3.69231H13.6666V2.46154H10.0302V1.84135C10.0302 0.83173 9.21109 0 8.21677 0H5.78306ZM5.78306 1.23077H8.21677C8.55768 1.23077 8.8181 1.49519 8.8181 1.84135V2.46154H5.18174V1.84135C5.18174 1.49519 5.44215 1.23077 5.78306 1.23077ZM2.75749 3.69231H11.2423V14.1538C11.2423 14.5 10.9772 14.7692 10.6363 14.7692H3.36355C3.02265 14.7692 2.75749 14.5 2.75749 14.1538V3.69231ZM3.96962 4.92308V13.5385H5.18174V4.92308H3.96962ZM6.39386 4.92308V13.5385H7.60598V4.92308H6.39386ZM8.8181 4.92308V13.5385H10.0302V4.92308H8.8181Z"/>\n\t\t\t\t\t\t</svg>\n\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="ajax-cart-line-item__prices" data-line="').concat(Number(e + 1), '">\n\t\t\t\t\t\t<!--<a class="ajax-cart-line-item__remove ').concat(Oi, '">\n\t\t\t\t\t\t\t<svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">\n\t\t\t\t\t\t\t\t<path opacity="0.25" d="M5.78306 0C4.78874 0 3.96962 0.83173 3.96962 1.84135V2.46154H0.333252V3.69231H1.54537V14.1538C1.54537 15.1683 2.3645 16 3.36355 16H10.6363C11.6353 16 12.4545 15.1683 12.4545 14.1538V3.69231H13.6666V2.46154H10.0302V1.84135C10.0302 0.83173 9.21109 0 8.21677 0H5.78306ZM5.78306 1.23077H8.21677C8.55768 1.23077 8.8181 1.49519 8.8181 1.84135V2.46154H5.18174V1.84135C5.18174 1.49519 5.44215 1.23077 5.78306 1.23077ZM2.75749 3.69231H11.2423V14.1538C11.2423 14.5 10.9772 14.7692 10.6363 14.7692H3.36355C3.02265 14.7692 2.75749 14.5 2.75749 14.1538V3.69231ZM3.96962 4.92308V13.5385H5.18174V4.92308H3.96962ZM6.39386 4.92308V13.5385H7.60598V4.92308H6.39386ZM8.8181 4.92308V13.5385H10.0302V4.92308H8.8181Z"/>\n\t\t\t\t\t\t\t</svg>\n\t\t\t\t\t\t</a>-->\n\t\t\t\t\t\t<div class="ajax-cart-line-item__quantity-selector" data-id="').concat(t.variant_id, '" data-qty="').concat(t.quantity, '" data-line="').concat(Number(e + 1), '">\n\t\t\t\t\t\t\t<div class="ajax-cart-line-item__minus js-ajax-cart-quantity-minus">\n\t\t\t\t\t\t\t\t<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">\n\t\t\t\t\t\t\t\t\t<path d="M8 0C3.59135 0 0 3.59135 0 8C0 12.4087 3.59135 16 8 16C12.4087 16 16 12.4087 16 8C16 3.59135 12.4087 0 8 0ZM8 1.23077C11.7452 1.23077 14.7692 4.25481 14.7692 8C14.7692 11.7452 11.7452 14.7692 8 14.7692C4.25481 14.7692 1.23077 11.7452 1.23077 8C1.23077 4.25481 4.25481 1.23077 8 1.23077ZM3.69231 7.38462V8.61539H12.3077V7.38462H3.69231Z" fill="#262626"/>\n\t\t\t\t\t\t\t\t</svg>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class="ajax-cart-line-item__quantity js-ajax-cart-quantity">').concat(t.quantity, '</div>\n\t\t\t\t\t\t\t<div class="ajax-cart-line-item__plus js-ajax-cart-quantity-plus">\n\t\t\t\t\t\t\t\t<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">\n\t\t\t\t\t\t\t\t\t<path d="M8 0C3.59135 0 0 3.59135 0 8C0 12.4087 3.59135 16 8 16C12.4087 16 16 12.4087 16 8C16 3.59135 12.4087 0 8 0ZM8 1.23077C11.7452 1.23077 14.7692 4.25481 14.7692 8C14.7692 11.7452 11.7452 14.7692 8 14.7692C4.25481 14.7692 1.23077 11.7452 1.23077 8C1.23077 4.25481 4.25481 1.23077 8 1.23077ZM7.38462 4.92308V7.38462H4.92308V8.61539H7.38462V11.0769H8.61539V8.61539H11.0769V7.38462H8.61539V4.92308H7.38462Z" fill="#262626"/>\n\t\t\t\t\t\t\t\t</svg>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class="ajax-cart-line-item__price">').concat(i(t.line_price), "</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>")
-                          }(t, e);
-                          Ui.innerHTML += n
-                      })), rr.innerHTML = i(t.total_price),
-                      function() {
-                          for (var t = document.querySelectorAll(Mi), e = 0; e < t.length; e++) t[e].addEventListener("click", (function() {
-                              ur(this.parentNode.getAttribute("data-line"), 0)
-                          }))
-                      }(),
-                      function() {
-                          for (var t = document.querySelectorAll(".js-ajax-cart-quantity-plus"), e = document.querySelectorAll(".js-ajax-cart-quantity"), n = function(n) {
-                                  t[n].addEventListener("click", (function() {
-                                      var t = this.parentNode.getAttribute("data-line"),
-                                          i = this.parentNode.getAttribute("data-qty"),
-                                          r = JSON.parse(i) + 1;
-                                      e[n].innerHTML = r, console.log(t, r), ur(t, r)
-                                  }))
-                              }, i = 0; i < t.length; i++) n(i)
-                      }(),
-                      function() {
-                          for (var t = document.querySelectorAll(".js-ajax-cart-quantity-minus"), e = document.querySelectorAll(".js-ajax-cart-quantity"), n = function(n) {
-                                  t[n].addEventListener("click", (function() {
-                                      var t = this.parentNode.getAttribute("data-line"),
-                                          i = this.parentNode.getAttribute("data-qty"),
-                                          r = JSON.parse(i) - 1;
-                                      e[n].innerHTML = r, console.log(t, r), ur(t, r)
-                                  }))
-                              }, i = 0; i < t.length; i++) n(i)
-                      }()
-              }(e), er.classList.remove("is-hidden"), "function" == typeof t && t())
-          },
-          error: function() {
-              fr()
-          }
-      })
-  }
 
-  function cr(t, e) {
-      bi.a.ajax({
-          type: "POST",
-          url: "/cart/add.js",
-          dataType: "json",
-          data: t,
-          success: function(t) {
-              "function" == typeof e ? e(t) : pr()
-          },
-          error: fr
-      })
-  }
-
-  function ur(t, e, n) {
-      bi.a.ajax({
-          type: "POST",
-          url: "/cart/change.js",
-          data: "quantity=".concat(e, "&line=").concat(t),
-          dataType: "json",
-          success: function(t) {
-              "function" == typeof n ? n(t) : lr()
-          },
-          error: fr
-      })
-  }
 
   function dr(t) {
       var e = {};
@@ -7658,12 +7582,6 @@
       })
   }
 
-  function br() {
-      nr.classList.remove(zi), mi.to(Gi, .4, {
-          autoAlpha: 0,
-          ease: dn.ease
-      })
-  }
   sr.forEach((function(t) {
       t.addEventListener("click", (function(e) {
           e.preventDefault();
