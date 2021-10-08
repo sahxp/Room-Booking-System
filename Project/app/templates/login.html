@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
 
@@ -80,7 +82,7 @@
             
         </span>
     </a>
-    <a href="signup.html" class="account-banner__register ">Create Account</a>
+    <a href="signup" class="account-banner__register ">Create Account</a>
 </div>
 
         <div class="navbar-burger-divider"></div>
@@ -112,7 +114,8 @@
                     <div class="login-page__form">
                         <h2 class="login-page__title">Sign In</h2>
                         <p class="login-page__desc">Login below to manage your Booking or Subscriptions</p>
-                        <form method="post" action="/account/login" id="customer_login" accept-charset="UTF-8"><input type="hidden" name="form_type" value="customer_login" /><input type="hidden" name="utf8" value="✓" />
+                        <form method="post" action="/" id="customer_login" accept-charset="UTF-8"><input type="hidden" name="form_type" value="customer_login" /><input type="hidden" name="utf8" value="✓" />
+                        {% csrf_token %}
                         <div class="success-box hide" data-reset-success>
                             We&#39;ve sent you an email with a link to update your password.
                         </div>
@@ -137,7 +140,7 @@
                 <div class="login-page__column login-page__column--signup">
                     <h2 class="login-page__title">Sign Up</h2>
                     <p class="login-page__desc">Create an account to manage your Booking or subscriptions by clicking below.</p>
-                    <a href="/signup.html" class="button button--invert">Create Account</a>
+                    <a href="signup" class="button button--invert">Create Account</a>
                 </div>
             </div>
         </div>
@@ -385,6 +388,6 @@
 </footer>
 </div>
 </div>
-<script src="/static/js/main.js" defer></script>
+<script src="{%  static  '/js/main.js'  %}" defer></script>
 </body>
 </html>
