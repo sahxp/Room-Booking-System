@@ -53,7 +53,9 @@
     <span></span>
 </div>
                 </div>
-                <div class="navbar__menu"><a class="navbar__item " href="/collections/all" alt="Shop">Shop</a><a class="navbar__item " href="/pages/patch" alt="Our Patch">Our Patch</a><a class="navbar__item " href="/pages/mission" alt="About Us">About Us</a></div>
+                <div class="navbar__menu"><a class="navbar__item " href="/rooms" alt="Rooms">Rooms</a>
+                    <a class="navbar__item " href="/pages/mission" alt="About Us">About Us</a>
+                </div>
             </div>
             <div class="navbar__brand">
                 
@@ -63,22 +65,12 @@
 
             </div>
             <div class="navbar__end">
-                <a class='navbar__item is-hidden-mobile' href="/pages/subscribe">Subscription</a>
+                <a class='navbar__item is-hidden-mobile' href="/subscription">Food Subscription</a>
                 
                 
                 <a class='navbar__item is-hidden-mobile' href="/">Sign in</a>
                 
                 
-                <div class='navbar__item navbar__item--icons'>
-                <div class='cart-icon' data-cart-toggle>
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C8.70356 0 6.00079 2.49519 6.00079 5.53846H2.00131C1.47013 5.53846 1.03269 5.92067 1.00144 6.41106L0.0015715 23.0264C-0.0140505 23.2788 0.0874982 23.5312 0.274974 23.7115C0.462449 23.899 0.728038 24 1.00144 24H22.9986C23.272 24 23.5376 23.899 23.725 23.7115C23.9125 23.5312 24.0141 23.2788 23.9984 23.0264L22.9986 6.41106C22.9673 5.92067 22.5299 5.53846 21.9987 5.53846H17.9992C17.9992 2.49519 15.2964 0 12 0ZM12 1.84615C14.2028 1.84615 15.9995 3.50481 15.9995 5.53846H8.00052C8.00052 3.50481 9.79716 1.84615 12 1.84615ZM2.9465 7.38462H6.00079V11.0769H8.00052V7.38462H15.9995V11.0769H17.9992V7.38462H21.0535L21.9362 22.1538H2.0638L2.9465 7.38462Z"/>
-    </svg>
-    <div class='cart-icon__dot'>
-        <span class="cart-icon__text" data-cart-counter></span>
-    </div>
-</div>
-                </div>
             </div>
     </div>
 </nav>
@@ -100,28 +92,11 @@
 
         <div class="navbar-burger-divider"></div>
         <div class="navbar-burger-menu__container">
-            <div class="navbar-burger-list"><a class="navbar-burger-list__item" href="/collections/all" alt="Shop All">Shop All</a>
-                
-                    <div class="navbar-burger-divider"></div>
-                
-<a class="navbar-burger-list__item" href="/pages/patch" alt="Our Patch">Our Patch</a>
-                
-                    <div class="navbar-burger-divider"></div>
-                
-<a class="navbar-burger-list__item" href="/pages/mission" alt="About Us">About Us</a>
-                
-                    <div class="navbar-burger-divider"></div>
-                
-<a class="navbar-burger-list__item" href="/pages/subscribe" alt="Subscribe">Subscribe</a>
-                
-<div class="navbar-burger-divider"></div>
-                <!--<a href="/collections/all" class="navbar-burger-list__item">Shop All</a>
-                <a href="/pages/patch" class="navbar-burger-list__item">Patch</a>
+            <div class="navbar-burger-list">
+                <a class="navbar-burger-list__item" href="/rooms" alt="Rooms">Find Room</a>
                 <div class="navbar-burger-divider"></div>
-                <a href="/pages/mission" class="navbar-burger-list__item">Mission</a>
+                <a class="navbar-burger-list__item" href="/subscription" alt="Subscription">Food Subscription</a>
                 <div class="navbar-burger-divider"></div>
-                <a href="/pages/subscribe" class="navbar-burger-list__item">Subscribe</a>
-                <div class="navbar-burger-divider"></div>-->
             </div>
         </div>
     </div>
@@ -135,7 +110,7 @@
         <div class="signup-page__container">
                 <div class="signup-page__form">
                     <h2 class="signup-page__title">Sign Up</h2>
-                    <p class="signup-page__desc">Create an account to manage your orders or subscriptions. <br/><br/> If you've already made an order or started a subscription, simply use the email address attached to that order to connect it with your account.</p>
+                    <p class="signup-page__desc">Create an account to manage your booking or subscription. <br/><br/> If you've already made an booking or started a subscription, simply use the email address attached to that order to connect it with your account.</p>
                     <form method="post" action="" id="create_customer" accept-charset="UTF-8"><input type="hidden" name="form_type" value="create_customer" /><input type="hidden" name="utf8" value="✓" />
                     {% csrf_token %}
                     <div class="field-group">
@@ -182,7 +157,7 @@
                 <div class="global-note__divider"></div>
                 <div class="global-note__grid-item">
                     <div>
-                        <div class="global-note__title">Good vibes, guaranteed.</div>
+                        <div class="global-note__title">Community Living Experience</div>
                     </div>
                 </div>
                 <div class="global-note__divider"></div>
@@ -258,9 +233,9 @@
                     <img loading="lazy" class="lazyload footer-info__logo"
                         data-src="/static/media/png.png"
                         alt="Vibrants Footer Logo" />
-                    <p class="footer-info__desc">Community Living Experience</p>
+                    <p class="footer-info__desc">Stadorm</p>
                     <div class="footer-info__social-logos">
-                        <a class="footer-info__social-logo" href="https://instagram.com/stadormlife"
+                        <a class="footer-info__social-logo" href="https://instagram.com/joinstadorm"
                             target="_blank" rel="noopener" aria-label="Instagram">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
