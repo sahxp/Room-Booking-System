@@ -248,6 +248,12 @@
         }
     </style>
 </div>
+{% if messages %}
+    {% for message in messages %}
+      {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+    {% endfor %}
+        
+    {% endif%}
 </main>
 <div id="shopify-section-footer" class="shopify-section">
 <footer class="footer">
