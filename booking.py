@@ -1,16 +1,20 @@
 import mysql.connector
 
-db = mysql.connector.connect(
-            host='127.0.0.1',
-            username='root',
-            password='a1234',
-            database='booking system'
-        ) 
+def add_user(fname,lname,email,password,username):
+    db = mysql.connector.connect(
+                host='sql6.freemysqlhosting.net',
+                username='sql6443052',
+                password='8yCMcmme2d',
+                database='sql6443052'
+            ) 
 
-cur = db.cursor()
+    cur = db.cursor()
 
-sql = "select * from user;"
+    sql = "INSERT INTO sql6443052.User (fname, lname, email, password, username) VALUE ('"+fname+"','"+lname+"','"+email+"','"+password+"','"+username+"');"
+    #sql = "SELECT * FROM User;"
+    cur.execute(sql)
+    a = cur.fetchall()
+    print(a)
+    db.commit()
 
-cur.execute(sql)
-a = cur.fetchall()
-print(a)
+add_user('test','test','test@test.com','1234','test')
