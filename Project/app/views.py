@@ -76,9 +76,13 @@ def signup(request):
             messages.success(request,'Added the user')
 
     return render(request,'signup.html')
-
+    
 def home(request,userId, username):
-    return render(request,'index.html')
+
+    return render(request,'index.html',context={'userId':userId,'username':username})
+
+def rooms(request,userId, username):
+    return render(request,'rooms.html')
 
 def details(request,userId,username,productId):
     return render(request,'details.html')
