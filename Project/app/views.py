@@ -12,6 +12,31 @@ def login(request):
             print("Enter all Fields")
             messages.error(request,'Enter all Fields')
             return render(request,'login.html')
+        else:
+            db = mysql.connector.connect(
+                    host='sql6.freemysqlhosting.net',
+                    username='sql6443052',
+                    password='8yCMcmme2d',
+                    database='sql6443052'
+                ) 
+            cur = db.cursor()
+
+            sql = "SELECT * FROM sql6443052.User WHERE email = '"+email+"';"
+
+            cur.execute(sql)
+
+            a = cur.fetchall()
+
+            if (len(a) == 0):
+                messages.error(request,"Email not registered")
+            else:
+                db_password = a[0][4]
+                db_username = a[0][5]
+                db_userId = a[0][0]
+                if (db_password==password):
+                    return redirect(str(db_userId)+'/'+str(db_username))
+                else:
+                    messages.error(request,"Incorrect Password")
 
         return render(request,'login.html')
     
@@ -48,7 +73,7 @@ def signup(request):
 
             db.commit()
 
-            messages.error(request,'Added the user')
+            messages.success(request,'Added the user')
 
     return render(request,'signup.html')
 

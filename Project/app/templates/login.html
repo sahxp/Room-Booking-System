@@ -102,6 +102,14 @@
 </div>
   <div data-scroll-container>
     <main class="main" role="main">
+
+    {% if messages %}
+    {% for message in messages %}
+      {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+    {% endfor %}
+        
+    {% endif%}
+    
         <section class="login-page">
     <div class="container">
         <div class="login-form-wrapper" data-login-form>
