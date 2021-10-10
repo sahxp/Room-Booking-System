@@ -5492,7 +5492,8 @@ screen and (min-width:768px) {
   background: linear-gradient(90deg, #e9f0f7, #ede9f7);
   border-radius: 14px;
   padding: 75px 30px 30px;
-  height: 960px
+  height: 960px;
+  width: 60%;
 }
 
 @media (min-width:478px) {
@@ -5552,33 +5553,10 @@ screen and (min-width:768px) {
   box-sizing: border-box;
   width: 100%;
   display: flex;
-  flex-direction: column
+  justify-content: center;
+  align-items: center;
 }
 
-@media (min-width:768px) {
-  .homepage-science__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    -moz-column-gap: 40px;
-    column-gap: 40px;
-    margin: 0 auto
-  }
-}
-
-@media (min-width:991px) {
-  .homepage-science__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    -moz-column-gap: 40px;
-    column-gap: 40px;
-    margin: 0 auto
-  }
-}
-
-.homepage-science__grid-item {
-  display: flex;
-  align-items: center
-}
 
 .homepage-science__image-wrapper {
   position: absolute;
@@ -5595,7 +5573,8 @@ screen and (min-width:768px) {
 .homepage-science__image-wrapper img {
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 80%;
+  max-width: 700px;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -5650,6 +5629,7 @@ screen and (min-width:768px) {
   max-width: 500px;
   margin: 0 0 56px;
   z-index: 999;
+  align-items: center;
 }
 
 @media (min-width:768px) {
@@ -5673,7 +5653,7 @@ screen and (min-width:768px) {
   letter-spacing: .13em;
   text-transform: uppercase;
   color: #262626;
-  text-align: left;
+  text-align: center;
   margin: 0 0 1rem
 }
 
@@ -5700,7 +5680,7 @@ screen and (min-width:768px) {
   line-height: 125%;
   font-weight: 700;
   line-height: 140% !important;
-  text-align: left;
+  text-align: center;
   color: #262626;
   max-width: 270px;
   margin: 0 0 1rem
@@ -5789,7 +5769,7 @@ screen and (min-width:768px) {
   font-weight: 500;
   font-size: .875rem;
   line-height: 180%;
-  text-align: left;
+  text-align: center;
   color: #262626;
   max-width: 100%;
   margin: 0 0 1.5rem
@@ -5866,7 +5846,9 @@ screen and (min-width:768px) {
 .homepage-science__points {
   list-style: none;
   padding: 0;
-  margin: 0 0 32px
+  margin: 0 0 32px;
+  text-align: center;
+  
 }
 
 @media (min-width:1280px) {
@@ -5877,8 +5859,14 @@ screen and (min-width:768px) {
 
 .homepage-science__point {
   display: flex;
+  align-items: center;
   margin-bottom: 4px
 }
+
+.homepage-science__points li {
+  display: block;
+}
+
 
 .homepage-science__point:last-child {
   margin-bottom: 0
@@ -5941,7 +5929,7 @@ screen and (min-width:768px) {
 
 .homepage-science__buttons {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center
 }
 
@@ -5963,7 +5951,7 @@ screen and (min-width:768px) {
   width: auto;
   color: #9b9b9b;
   padding: 0;
-  text-align: left;
+  text-align: center;
   margin-left: 1.5rem
 }
 
