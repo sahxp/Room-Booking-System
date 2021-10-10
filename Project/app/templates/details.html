@@ -223,7 +223,7 @@
             <div class="product-content__desc"><p><meta charset="utf-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium reiciendis aliquid quas laudantium maxime excepturi, sapiente, dicta similique recusandae, vel iusto nisi provident? Quos asperiores consequatur tempore minima voluptatibus ipsam. <br></p>
 <p><strong>58 beds available</strong></p></div>
             <div class="product-content__form">
-                <form id="AddToCartForm" action="" method="post" enctype="multipart/form-data">
+                <form id="AddToCartForm" action="/checkout/{{userId}}/{{username}}/{{productId}}/" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
     <input type="hidden" name="id" value="38122287202478" />
     <input type="hidden" name="quantity" value="1" min="1">

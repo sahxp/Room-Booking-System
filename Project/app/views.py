@@ -85,4 +85,7 @@ def rooms(request,userId, username):
     return render(request,'rooms.html')
 
 def details(request,userId,username,productId):
-    return render(request,'details.html')
+    return render(request,'details.html',context={'userId':userId,'username':username,'productId':productId})
+
+def checkout(request,userId,username,productId):
+    return render(request,'checkout.html')
