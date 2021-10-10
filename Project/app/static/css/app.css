@@ -4764,7 +4764,7 @@ screen and (min-width:768px) {
   object-fit: cover;
   position: absolute;
   -o-object-position: center;
-  object-position: center
+  object-position: center;
 }
 
 @media (min-width:768px) {
