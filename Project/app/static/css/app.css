@@ -5010,8 +5010,9 @@ screen and (min-width:768px) {
 
 .slideshow__button {
   width: auto !important;
-  margin: 0 auto;
-  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, .1))
+  position: absolute;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, .1));
+  bottom: 10%;
 }
 
 @media print,
