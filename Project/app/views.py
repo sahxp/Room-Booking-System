@@ -82,7 +82,7 @@ def home(request,userId, username):
     return render(request,'index.html',context={'userId':userId,'username':username})
 
 def rooms(request,userId, username):
-    return render(request,'rooms.html')
+    return render(request,'rooms.html',context={'userId':userId,'username':username})
 
 def details(request,userId,username,productId):
     return render(request,'details.html',context={'userId':userId,'username':username,'productId':productId})
