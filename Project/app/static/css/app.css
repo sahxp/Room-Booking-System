@@ -3251,6 +3251,7 @@ div#rc_login a {
 }
 
 .global-note {
+  margin-top: 25px;
   box-sizing: content-box;
   padding: 0 .625rem .625rem
 }
