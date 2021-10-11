@@ -89,3 +89,6 @@ def details(request,userId,username,productId):
 
 def checkout(request,userId,username,productId):
     return render(request,'checkout.html')
+
+def subscription(request,userId, username):
+    return render(request,'subscription.html')
