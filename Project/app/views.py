@@ -85,6 +85,8 @@ def rooms(request,userId, username):
     return render(request,'rooms.html',context={'userId':userId,'username':username})
 
 def details(request,userId,username,productId):
+    if (request.method == 'POST'):
+        return redirect('/checkout/'+str(userId)+'/'+str(username)+'/'+str(productId)+'/')
     return render(request,'details.html',context={'userId':userId,'username':username,'productId':productId})
 
 def checkout(request,userId,username,productId):
