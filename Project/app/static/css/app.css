@@ -8508,7 +8508,7 @@ screen and (min-width:768px) {
 .homepage-doctor-trust {
   box-sizing: border-box;
   height: 100%;
-  padding: 72px 24px;
+  padding: 24px;
   background: radial-gradient(96.88% 50% at 50% 50%, #fff 0, #eee9ff 100%);
   border-radius: 14px;
   flex-direction: row
@@ -8755,22 +8755,22 @@ screen and (min-width:768px) {
   background: linear-gradient(180deg, #dee9ff -61.06%, #fee8e8 19.47%, #f3effd);
   border-radius: 12px;
   height: 100%;
-  padding: 64px 24px;
+  padding: 24px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between
+  justify-content: center;
 }
 
 @media (min-width:991px) {
   .homepage-set {
-    padding: 64px 48px
+    padding: 48px
   }
 }
 
 @media (min-width:1280px) {
   .homepage-set {
-    padding: 64px
+    padding: 48px
   }
 }
 
