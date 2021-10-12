@@ -15,12 +15,9 @@
     <meta property="og:description" content="An Affordable Co-Living Space for Students & Working Professionals.">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name="description " content="An Affordable Co-Living Space for Students & Working Professionals.">
-
-
-
     <link rel="shortcut icon "
-        href="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Favicon_0ea95c51-56ad-4940-ab13-5586340b333c_32x32.png?v=1621577330 "
-        type="image/png " />
+    href="/static/media/png.png"
+    type="image/png " />
     <link rel="preconnect " href="https://fonts.gstatic.com ">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=block "
         rel="stylesheet ">
@@ -37,90 +34,78 @@
 
 <body>
     
-  <div id="shopify-section-header" class="shopify-section"><header class="header">
-    
-    <nav class="navbar">
-    <div class="navbar__container">
-        <div class="navbar__start">
-                <div class="navbar__item navbar__item--icons is-hidden-desktop">
-                    <div class="navbar-burger-menu__icon js-navbar-burger-trigger">
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
+    <div id="shopify-section-header" class="shopify-section">
+        <header class="header">
+
+            <nav class="navbar">
+                <div class="navbar__container">
+                    <div class="navbar__start">
+                        <div class="navbar__item navbar__item--icons is-hidden-desktop">
+                            <div class="navbar-burger-menu__icon js-navbar-burger-trigger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="navbar__menu"><a class="navbar__item " href="/rooms/{{userId}}/{{username}}/" alt="Rooms">Find Rooms</a></div>
+                    </div>
+                    <div class="navbar__brand">
+
+                        <a class="navbar__logo" href="/">
+                            <img src="/static/media/png.png" alt="Stadorm" />
+                        </a>
+
+                    </div>
+                    <div class="navbar__end">
+                        <a class='navbar__item is-hidden-mobile' href="/subscription/{{userId}}/{{username}}/">Food Subscription</a>
+
+
+                        <!-- <a class='navbar__item is-hidden-mobile' href="login.html">Sign in</a> -->
+
+
+                        <div class='navbar__item navbar__item--icons'>
+                            
+                        </div>
+                    </div>
                 </div>
-                <div class="navbar__menu"><a class="navbar__item navbar__item--active" href="/collections/all" alt="Shop">Shop</a><a class="navbar__item " href="/pages/patch" alt="Our Patch">Our Patch</a><a class="navbar__item " href="/pages/mission" alt="About Us">About Us</a></div>
-            </div>
-            <div class="navbar__brand">
-                
-<a class="navbar__logo" href="/">
-    <img src="/static/media/png.png" alt="Vibrants"/>
-</a>
+            </nav>
+            <div class="navbar-burger-menu">
+                <div class="navbar-burger-menu__content">
+                    <div class="account-banner">
+                        <a href="/account/login" class="account-banner__signin ">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#6671c2" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 14.4736 21.274 16.7308 19.8173 18.4904C19.024 16.2404 17.3077 14.4303 15.1154 13.5361C16.0313 12.6923 16.6154 11.488 16.6154 10.1538C16.6154 7.61538 14.5385 5.53846 12 5.53846C9.46154 5.53846 7.38462 7.61538 7.38462 10.1538C7.38462 11.488 7.96875 12.6923 8.88462 13.5361C6.69231 14.4303 4.98317 16.2404 4.1899 18.4904C2.72596 16.7308 1.84615 14.4736 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM12 7.38462C13.5433 7.38462 14.7692 8.61058 14.7692 10.1538C14.7692 11.6971 13.5433 12.9231 12 12.9231C10.4567 12.9231 9.23077 11.6971 9.23077 10.1538C9.23077 8.61058 10.4567 7.38462 12 7.38462ZM12 14.7692C15.137 14.7692 17.7115 16.9976 18.3101 19.9543C16.5721 21.3317 14.387 22.1538 12 22.1538C9.61298 22.1538 7.42789 21.3317 5.69712 19.9543C6.28846 16.9976 8.86298 14.7692 12 14.7692Z"/>
+                            </svg>
+                            <span>
+                                
+                                    Sign In
+                                
+                            </span>
+                        </a>
+                        <a href="/account/register" class="account-banner__register ">Create Account</a>
+                    </div>
+                    <div class="navbar-burger-divider"></div>
+                    <div class="navbar-burger-menu__container">
+                        <div class="navbar-burger-list"><a class="navbar-burger-list__item" href="rooms"
+                                alt="Rooms">Find Rooms</a>
+                            <div class="navbar-burger-divider"></div>
 
-            </div>
-            <div class="navbar__end">
-                <a class='navbar__item is-hidden-mobile' href="/pages/subscribe">Subscription</a>
-                
-                
-                <a class='navbar__item is-hidden-mobile' href="/account/login">Sign in</a>
-                
-                
-            </div>
-    </div>
-</nav>
-<div class="navbar-burger-menu">
-    <div class="navbar-burger-menu__content">
-        <div class="account-banner">
-    <a href="/account/login" class="account-banner__signin ">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="#6671c2" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 14.4736 21.274 16.7308 19.8173 18.4904C19.024 16.2404 17.3077 14.4303 15.1154 13.5361C16.0313 12.6923 16.6154 11.488 16.6154 10.1538C16.6154 7.61538 14.5385 5.53846 12 5.53846C9.46154 5.53846 7.38462 7.61538 7.38462 10.1538C7.38462 11.488 7.96875 12.6923 8.88462 13.5361C6.69231 14.4303 4.98317 16.2404 4.1899 18.4904C2.72596 16.7308 1.84615 14.4736 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM12 7.38462C13.5433 7.38462 14.7692 8.61058 14.7692 10.1538C14.7692 11.6971 13.5433 12.9231 12 12.9231C10.4567 12.9231 9.23077 11.6971 9.23077 10.1538C9.23077 8.61058 10.4567 7.38462 12 7.38462ZM12 14.7692C15.137 14.7692 17.7115 16.9976 18.3101 19.9543C16.5721 21.3317 14.387 22.1538 12 22.1538C9.61298 22.1538 7.42789 21.3317 5.69712 19.9543C6.28846 16.9976 8.86298 14.7692 12 14.7692Z"/>
-        </svg>
-        <span>
-            
-                Sign In
-            
-        </span>
-    </a>
-    <a href="/account/register" class="account-banner__register ">Create Account</a>
-</div>
+                            <a class="navbar-burger-list__item" href="subscription" alt="Subscribe">Food Subscription</a>
 
-        <div class="navbar-burger-divider"></div>
-        <div class="navbar-burger-menu__container">
-            <div class="navbar-burger-list"><a class="navbar-burger-list__item" href="/collections/all" alt="Shop All">Shop All</a>
-                
-                    <div class="navbar-burger-divider"></div>
-                
-<a class="navbar-burger-list__item" href="/pages/patch" alt="Our Patch">Our Patch</a>
-                
-                    <div class="navbar-burger-divider"></div>
-                
-<a class="navbar-burger-list__item" href="/pages/mission" alt="About Us">About Us</a>
-                
-                    <div class="navbar-burger-divider"></div>
-                
-<a class="navbar-burger-list__item" href="/pages/subscribe" alt="Subscribe">Subscribe</a>
-                
-<div class="navbar-burger-divider"></div>
-                <!--<a href="/collections/all" class="navbar-burger-list__item">Shop All</a>
-                <a href="/pages/patch" class="navbar-burger-list__item">Patch</a>
-                <div class="navbar-burger-divider"></div>
-                <a href="/pages/mission" class="navbar-burger-list__item">Mission</a>
-                <div class="navbar-burger-divider"></div>
-                <a href="/pages/subscribe" class="navbar-burger-list__item">Subscribe</a>
-                <div class="navbar-burger-divider"></div>-->
+                            <div class="navbar-burger-divider"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </header>
     </div>
-</div>
-</header>
-</div>
   <div data-scroll-container>
     <main class="main" role="main">
         <div class="collection-page">
   <div class="collection-page__container">
     <div class="collection-page__caption">Explore</div>
     <h1 class="collection-page__title">Stays in Pune</h1>
-    <p class="collection-page__desc">Vibrants helps you restore balance and feel better — without drugs or side effects.</p>
+    <p class="collection-page__desc">Currently available in Pimpri-Chinchwad, Pune</p>
     <div class="collection-page__products">
       
         <a href="/details/{{userId}}/{{username}}/1" class="homepage-products-card">
@@ -378,164 +363,165 @@ span {
     </div>
   </div>
 </div>
-<div id="shopify-section-collection-security-tags" class="shopify-section"><div class="collection-security-tags-wrapper">
-    <div class="collection-security-tags">
-        <div class="collection-security-tags__tags">
-            <div class="collection-security-tags__list collection-security-tags__list--first">
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">DRUG FREE</span>
+<div id="shopify-section-collection-security-tags" class="shopify-section">
+    <div class="homepage-security-tags-wrapper">
+        <div class="homepage-security-tags">
+            <div class="homepage-security-tags__tags">
+                <div class="homepage-security-tags__list homepage-security-tags__list--first">
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">AFFORDABLE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">ZERO BROKERAGE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO HIDDEN BILLS</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">FREE HOUSEKEEPING</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO SECURITY DEPOSIT</span>
+                    </div>
+                    
                 </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">NO SIDE EFFECTS</span>
+                <div class="homepage-security-tags__list homepage-security-tags__list--second">
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">AFFORDABLE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">ZERO BROKERAGE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO HIDDEN BILLS</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">FREE HOUSEKEEPING</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO SECURITY DEPOSIT</span>
+                    </div>
+                    
                 </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">NO INGREDIENTS</span>
+                <div class="homepage-security-tags__list homepage-security-tags__list--second">
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">AFFORDABLE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">ZERO BROKERAGE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO HIDDEN BILLS</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">FREE HOUSEKEEPING</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO SECURITY DEPOSIT</span>
+                    </div>
+                    
                 </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">SAFE  ON ALL AGES</span>
+                <div class="homepage-security-tags__list homepage-security-tags__list--second">
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">AFFORDABLE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">ZERO BROKERAGE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO HIDDEN BILLS</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">FREE HOUSEKEEPING</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO SECURITY DEPOSIT</span>
+                    </div>
+                    
                 </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">MONEY-BACK GUARANTEE</span>
-                </div>
-                
-            </div>
-            <div class="collection-security-tags__list collection-security-tags__list--second">
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">DRUG FREE</span>
-                </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">NO SIDE EFFECTS</span>
-                </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">NO INGREDIENTS</span>
-                </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">SAFE  ON ALL AGES</span>
-                </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">MONEY-BACK GUARANTEE</span>
-                </div>
-                
-            </div>
-            <div class="collection-security-tags__list collection-security-tags__list--second">
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">DRUG FREE</span>
-                </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">NO SIDE EFFECTS</span>
-                </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">NO INGREDIENTS</span>
-                </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">SAFE  ON ALL AGES</span>
-                </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">MONEY-BACK GUARANTEE</span>
-                </div>
-                
-            </div>
-            <div class="collection-security-tags__list collection-security-tags__list--second">
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">DRUG FREE</span>
-                </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">NO SIDE EFFECTS</span>
-                </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">NO INGREDIENTS</span>
-                </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">SAFE  ON ALL AGES</span>
-                </div>
-                
-                <div class="collection-security-tags__item">
-                    <svg class="collection-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="collection-security-tags__title">MONEY-BACK GUARANTEE</span>
-                </div>
-                
             </div>
         </div>
     </div>
-</div>
 </div>
 
 <div id="shopify-section-guarantee" class="shopify-section">
@@ -626,7 +612,7 @@ span {
                 <div class="footer-info">
                     <img loading="lazy" class="lazyload footer-info__logo"
                         data-src="/static/media/png.png"
-                        alt="Vibrants Footer Logo" />
+                        alt="Footer Logo" />
                     <p class="footer-info__desc">Stadorm</p>
                     <div class="footer-info__social-logos">
                         <a class="footer-info__social-logo" href="https://instagram.com/joinstadorm"

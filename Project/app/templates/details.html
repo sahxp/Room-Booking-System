@@ -2,8 +2,12 @@
 
 <!doctype html>
 <html lang="en">
+
 <head>
-    <title>Stadorm - Details</title>
+    <title>Stadorm - Community Living Experience</title>
+
+
+
     <meta property="og:site_name" content="Stadorm">
     <meta property="og:url" content="https://stadorm.com/">
     <meta property="og:title" content="Stadorm - Community Living Experience">
@@ -11,11 +15,8 @@
     <meta property="og:description" content="An Affordable Co-Living Space for Students & Working Professionals.">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name="description " content="An Affordable Co-Living Space for Students & Working Professionals.">
-    <script src="https://sales-notification-cdn.makeprosimp.com/v1/published/63864/529e20f81bc94ce894f2804c93e96d44/98/app.js"></script>
-
-
     <link rel="shortcut icon "
-        href="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Favicon_0ea95c51-56ad-4940-ab13-5586340b333c_32x32.png?v=1621577330 "
+        href="/static/media/png.png"
         type="image/png " />
     <link rel="preconnect " href="https://fonts.gstatic.com ">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=block "
@@ -27,98 +28,76 @@
         href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css " />
     <link rel="stylesheet "
         href="{%  static  '/css/app.css'  %}">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-361370544 "></script>
     
+
 </head>
-
 <body>
-    
-  <div id="shopify-section-header" class="shopify-section"><header class="header">
-    
-    <nav class="navbar">
-    <div class="navbar__container">
-        <div class="navbar__start">
-                <div class="navbar__item navbar__item--icons is-hidden-desktop">
-                    <div class="navbar-burger-menu__icon js-navbar-burger-trigger">
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
-                </div>
-                <div class="navbar__menu"><a class="navbar__item " href="/collections/all" alt="Shop">Shop</a><a class="navbar__item " href="/pages/patch" alt="Our Patch">Our Patch</a><a class="navbar__item " href="/pages/mission" alt="About Us">About Us</a></div>
-            </div>
-            <div class="navbar__brand">
-                
-<a class="navbar__logo" href="/">
-    <img src="/static/media/png.png" alt="Vibrants"/>
-</a>
+    <div id="shopify-section-header" class="shopify-section">
+        <header class="header">
 
-            </div>
-            <div class="navbar__end">
-                <a class='navbar__item is-hidden-mobile' href="/pages/subscribe">Subscription</a>
-                
-                
-                <a class='navbar__item is-hidden-mobile' href="/account/login">Sign in</a>
-                
-                
-                <div class='navbar__item navbar__item--icons'>
-                <div class='cart-icon' data-cart-toggle>
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C8.70356 0 6.00079 2.49519 6.00079 5.53846H2.00131C1.47013 5.53846 1.03269 5.92067 1.00144 6.41106L0.0015715 23.0264C-0.0140505 23.2788 0.0874982 23.5312 0.274974 23.7115C0.462449 23.899 0.728038 24 1.00144 24H22.9986C23.272 24 23.5376 23.899 23.725 23.7115C23.9125 23.5312 24.0141 23.2788 23.9984 23.0264L22.9986 6.41106C22.9673 5.92067 22.5299 5.53846 21.9987 5.53846H17.9992C17.9992 2.49519 15.2964 0 12 0ZM12 1.84615C14.2028 1.84615 15.9995 3.50481 15.9995 5.53846H8.00052C8.00052 3.50481 9.79716 1.84615 12 1.84615ZM2.9465 7.38462H6.00079V11.0769H8.00052V7.38462H15.9995V11.0769H17.9992V7.38462H21.0535L21.9362 22.1538H2.0638L2.9465 7.38462Z"/>
-    </svg>
-    <div class='cart-icon__dot'>
-        <span class="cart-icon__text" data-cart-counter></span>
-    </div>
-</div>
+            <nav class="navbar">
+                <div class="navbar__container">
+                    <div class="navbar__start">
+                        <div class="navbar__item navbar__item--icons is-hidden-desktop">
+                            <div class="navbar-burger-menu__icon js-navbar-burger-trigger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="navbar__menu"><a class="navbar__item " href="/rooms/{{userId}}/{{username}}/" alt="Rooms">Find Rooms</a></div>
+                    </div>
+                    <div class="navbar__brand">
+
+                        <a class="navbar__logo" href="/">
+                            <img src="/static/media/png.png" alt="Vibrants" />
+                        </a>
+
+                    </div>
+                    <div class="navbar__end">
+                        <a class='navbar__item is-hidden-mobile' href="/subscription/{{userId}}/{{username}}/">Food Subscription</a>
+
+
+                        <!-- <a class='navbar__item is-hidden-mobile' href="login.html">Sign in</a> -->
+
+
+                        <div class='navbar__item navbar__item--icons'>
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="navbar-burger-menu">
+                <div class="navbar-burger-menu__content">
+                    <div class="account-banner">
+                        <a href="/account/login" class="account-banner__signin ">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#6671c2" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 14.4736 21.274 16.7308 19.8173 18.4904C19.024 16.2404 17.3077 14.4303 15.1154 13.5361C16.0313 12.6923 16.6154 11.488 16.6154 10.1538C16.6154 7.61538 14.5385 5.53846 12 5.53846C9.46154 5.53846 7.38462 7.61538 7.38462 10.1538C7.38462 11.488 7.96875 12.6923 8.88462 13.5361C6.69231 14.4303 4.98317 16.2404 4.1899 18.4904C2.72596 16.7308 1.84615 14.4736 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM12 7.38462C13.5433 7.38462 14.7692 8.61058 14.7692 10.1538C14.7692 11.6971 13.5433 12.9231 12 12.9231C10.4567 12.9231 9.23077 11.6971 9.23077 10.1538C9.23077 8.61058 10.4567 7.38462 12 7.38462ZM12 14.7692C15.137 14.7692 17.7115 16.9976 18.3101 19.9543C16.5721 21.3317 14.387 22.1538 12 22.1538C9.61298 22.1538 7.42789 21.3317 5.69712 19.9543C6.28846 16.9976 8.86298 14.7692 12 14.7692Z"/>
+                            </svg>
+                            <span>
+                                
+                                    Sign In
+                                
+                            </span>
+                        </a>
+                        <a href="/account/register" class="account-banner__register ">Create Account</a>
+                    </div>
+                    <div class="navbar-burger-divider"></div>
+                    <div class="navbar-burger-menu__container">
+                        <div class="navbar-burger-list"><a class="navbar-burger-list__item" href="rooms"
+                                alt="Rooms">Find Rooms</a>
+                            <div class="navbar-burger-divider"></div>
+
+                            <a class="navbar-burger-list__item" href="subscription" alt="Subscribe">Food Subscription</a>
+
+                            <div class="navbar-burger-divider"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </header>
     </div>
-</nav>
-<div class="navbar-burger-menu">
-    <div class="navbar-burger-menu__content">
-        <div class="account-banner">
-    <a href="/account/login" class="account-banner__signin ">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="#6671c2" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 14.4736 21.274 16.7308 19.8173 18.4904C19.024 16.2404 17.3077 14.4303 15.1154 13.5361C16.0313 12.6923 16.6154 11.488 16.6154 10.1538C16.6154 7.61538 14.5385 5.53846 12 5.53846C9.46154 5.53846 7.38462 7.61538 7.38462 10.1538C7.38462 11.488 7.96875 12.6923 8.88462 13.5361C6.69231 14.4303 4.98317 16.2404 4.1899 18.4904C2.72596 16.7308 1.84615 14.4736 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM12 7.38462C13.5433 7.38462 14.7692 8.61058 14.7692 10.1538C14.7692 11.6971 13.5433 12.9231 12 12.9231C10.4567 12.9231 9.23077 11.6971 9.23077 10.1538C9.23077 8.61058 10.4567 7.38462 12 7.38462ZM12 14.7692C15.137 14.7692 17.7115 16.9976 18.3101 19.9543C16.5721 21.3317 14.387 22.1538 12 22.1538C9.61298 22.1538 7.42789 21.3317 5.69712 19.9543C6.28846 16.9976 8.86298 14.7692 12 14.7692Z"/>
-        </svg>
-        <span>
-            
-                Sign In
-            
-        </span>
-    </a>
-    <a href="/account/register" class="account-banner__register ">Create Account</a>
-</div>
-
-        <div class="navbar-burger-divider"></div>
-        <div class="navbar-burger-menu__container">
-            <div class="navbar-burger-list"><a class="navbar-burger-list__item" href="/collections/all" alt="Shop All">Shop All</a>
-                
-                    <div class="navbar-burger-divider"></div>
-                
-<a class="navbar-burger-list__item" href="/pages/patch" alt="Our Patch">Our Patch</a>
-                
-                    <div class="navbar-burger-divider"></div>
-                
-<a class="navbar-burger-list__item" href="/pages/mission" alt="About Us">About Us</a>
-                
-                    <div class="navbar-burger-divider"></div>
-                
-<a class="navbar-burger-list__item" href="/pages/subscribe" alt="Subscribe">Subscribe</a>
-                
-<div class="navbar-burger-divider"></div>
-                <!--<a href="/collections/all" class="navbar-burger-list__item">Shop All</a>
-                <a href="/pages/patch" class="navbar-burger-list__item">Patch</a>
-                <div class="navbar-burger-divider"></div>
-                <a href="/pages/mission" class="navbar-burger-list__item">Mission</a>
-                <div class="navbar-burger-divider"></div>
-                <a href="/pages/subscribe" class="navbar-burger-list__item">Subscribe</a>
-                <div class="navbar-burger-divider"></div>-->
-            </div>
-        </div>
-    </div>
-</div>
-</header>
-</div>
   <div data-scroll-container>
     <main class="main" role="main">
         <div class="product-template">
@@ -130,12 +109,13 @@
             
             <div class="product-image-slider__slide">
                 <div class="product-image-slider__image">
+
                     <picture>
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-3_1280x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-3_1280x.gif?v=1623320207 2x" media="(min-width: 1440px)">
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-3_1080x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-3_1080x.gif?v=1623320207 2x" media="(min-width: 992px)">
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-3_980x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-3_980x.gif?v=1623320207 2x" media="(min-width: 768px)">
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-3_720x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-3_720x.gif?v=1623320207 2x">
-                        <img class="lazyload" loading="lazy" aria-hidden="true" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-3_720x.gif?v=1623320207" alt="Good Night">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969363.jpg?k=adc921a217c20b1414e2f0879ebfe44d7dbd2eb8811b56ba08b288274233b8f5&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969363.jpg?k=adc921a217c20b1414e2f0879ebfe44d7dbd2eb8811b56ba08b288274233b8f5&o=&hp=1 2x" media="(min-width: 1440px)">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969367.jpg?k=b17c7a342786babea272c9a54ced2dd30e1e28404d351231e8f8874c379edaf1&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969367.jpg?k=b17c7a342786babea272c9a54ced2dd30e1e28404d351231e8f8874c379edaf1&o=&hp=1 2x" media="(min-width: 992px)">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969359.jpg?k=b19576e11b0be5034017edc7249932961606373460aa3af0681e4c9334db49f9&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969359.jpg?k=b19576e11b0be5034017edc7249932961606373460aa3af0681e4c9334db49f9&o=&hp=1 2x" media="(min-width: 768px)">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969374.jpg?k=e7b9ebbf279f198d6ebbfd11d0033b75deb41d8a17ed03adaadf56b902b45148&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969374.jpg?k=e7b9ebbf279f198d6ebbfd11d0033b75deb41d8a17ed03adaadf56b902b45148&o=&hp=1 2x">
+                        <img class="lazyload" loading="lazy" aria-hidden="true" data-src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969374.jpg?k=e7b9ebbf279f198d6ebbfd11d0033b75deb41d8a17ed03adaadf56b902b45148&o=&hp=1" alt="Stadorm A001">
                     </picture>
                 </div>
             </div>
@@ -143,11 +123,11 @@
             <div class="product-image-slider__slide">
                 <div class="product-image-slider__image">
                     <picture>
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---5_1280x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---5_1280x.gif?v=1623320207 2x" media="(min-width: 1440px)">
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---5_1080x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---5_1080x.gif?v=1623320207 2x" media="(min-width: 992px)">
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---5_980x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---5_980x.gif?v=1623320207 2x" media="(min-width: 768px)">
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---5_720x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---5_720x.gif?v=1623320207 2x">
-                        <img class="lazyload" loading="lazy" aria-hidden="true" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---5_720x.gif?v=1623320207" alt="Good Night">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969367.jpg?k=b17c7a342786babea272c9a54ced2dd30e1e28404d351231e8f8874c379edaf1&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969367.jpg?k=b17c7a342786babea272c9a54ced2dd30e1e28404d351231e8f8874c379edaf1&o=&hp=1 2x" media="(min-width: 1440px)">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969367.jpg?k=b17c7a342786babea272c9a54ced2dd30e1e28404d351231e8f8874c379edaf1&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969367.jpg?k=b17c7a342786babea272c9a54ced2dd30e1e28404d351231e8f8874c379edaf1&o=&hp=1 2x" media="(min-width: 992px)">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969367.jpg?k=b17c7a342786babea272c9a54ced2dd30e1e28404d351231e8f8874c379edaf1&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969367.jpg?k=b17c7a342786babea272c9a54ced2dd30e1e28404d351231e8f8874c379edaf1&o=&hp=1 2x" media="(min-width: 768px)">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969367.jpg?k=b17c7a342786babea272c9a54ced2dd30e1e28404d351231e8f8874c379edaf1&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969367.jpg?k=b17c7a342786babea272c9a54ced2dd30e1e28404d351231e8f8874c379edaf1&o=&hp=1 2x">
+                        <img class="lazyload" loading="lazy" aria-hidden="true" data-src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969367.jpg?k=b17c7a342786babea272c9a54ced2dd30e1e28404d351231e8f8874c379edaf1&o=&hp=1" alt="Calm Down">
                     </picture>
                 </div>
             </div>
@@ -155,11 +135,11 @@
             <div class="product-image-slider__slide">
                 <div class="product-image-slider__image">
                     <picture>
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-2_1280x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-2_1280x.gif?v=1623320207 2x" media="(min-width: 1440px)">
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-2_1080x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-2_1080x.gif?v=1623320207 2x" media="(min-width: 992px)">
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-2_980x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-2_980x.gif?v=1623320207 2x" media="(min-width: 768px)">
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-2_720x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-2_720x.gif?v=1623320207 2x">
-                        <img class="lazyload" loading="lazy" aria-hidden="true" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-2_720x.gif?v=1623320207" alt="Good Night">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969359.jpg?k=b19576e11b0be5034017edc7249932961606373460aa3af0681e4c9334db49f9&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969359.jpg?k=b19576e11b0be5034017edc7249932961606373460aa3af0681e4c9334db49f9&o=&hp=1 2x" media="(min-width: 1440px)">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969359.jpg?k=b19576e11b0be5034017edc7249932961606373460aa3af0681e4c9334db49f9&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969359.jpg?k=b19576e11b0be5034017edc7249932961606373460aa3af0681e4c9334db49f9&o=&hp=1 2x" media="(min-width: 992px)">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969359.jpg?k=b19576e11b0be5034017edc7249932961606373460aa3af0681e4c9334db49f9&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969359.jpg?k=b19576e11b0be5034017edc7249932961606373460aa3af0681e4c9334db49f9&o=&hp=1 2x" media="(min-width: 768px)">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969359.jpg?k=b19576e11b0be5034017edc7249932961606373460aa3af0681e4c9334db49f9&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969359.jpg?k=b19576e11b0be5034017edc7249932961606373460aa3af0681e4c9334db49f9&o=&hp=1 2x">
+                        <img class="lazyload" loading="lazy" aria-hidden="true" data-src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969359.jpg?k=b19576e11b0be5034017edc7249932961606373460aa3af0681e4c9334db49f9&o=&hp=1" alt="Calm Down">
                     </picture>
                 </div>
             </div>
@@ -167,11 +147,11 @@
             <div class="product-image-slider__slide">
                 <div class="product-image-slider__image">
                     <picture>
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---4_1280x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---4_1280x.gif?v=1623320207 2x" media="(min-width: 1440px)">
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---4_1080x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---4_1080x.gif?v=1623320207 2x" media="(min-width: 992px)">
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---4_980x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---4_980x.gif?v=1623320207 2x" media="(min-width: 768px)">
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---4_720x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---4_720x.gif?v=1623320207 2x">
-                        <img class="lazyload" loading="lazy" aria-hidden="true" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---4_720x.gif?v=1623320207" alt="Good Night">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969374.jpg?k=e7b9ebbf279f198d6ebbfd11d0033b75deb41d8a17ed03adaadf56b902b45148&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969374.jpg?k=e7b9ebbf279f198d6ebbfd11d0033b75deb41d8a17ed03adaadf56b902b45148&o=&hp=1 2x" media="(min-width: 1440px)">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969374.jpg?k=e7b9ebbf279f198d6ebbfd11d0033b75deb41d8a17ed03adaadf56b902b45148&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969374.jpg?k=e7b9ebbf279f198d6ebbfd11d0033b75deb41d8a17ed03adaadf56b902b45148&o=&hp=1 2x" media="(min-width: 992px)">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969374.jpg?k=e7b9ebbf279f198d6ebbfd11d0033b75deb41d8a17ed03adaadf56b902b45148&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969374.jpg?k=e7b9ebbf279f198d6ebbfd11d0033b75deb41d8a17ed03adaadf56b902b45148&o=&hp=1 2x" media="(min-width: 768px)">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969374.jpg?k=e7b9ebbf279f198d6ebbfd11d0033b75deb41d8a17ed03adaadf56b902b45148&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969374.jpg?k=e7b9ebbf279f198d6ebbfd11d0033b75deb41d8a17ed03adaadf56b902b45148&o=&hp=1 2x">
+                        <img class="lazyload" loading="lazy" aria-hidden="true" data-src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969374.jpg?k=e7b9ebbf279f198d6ebbfd11d0033b75deb41d8a17ed03adaadf56b902b45148&o=&hp=1" alt="Calm Down">
                     </picture>
                 </div>
             </div>
@@ -179,11 +159,11 @@
             <div class="product-image-slider__slide">
                 <div class="product-image-slider__image">
                     <picture>
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---1_1280x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---1_1280x.gif?v=1623320207 2x" media="(min-width: 1440px)">
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---1_1080x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---1_1080x.gif?v=1623320207 2x" media="(min-width: 992px)">
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---1_980x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---1_980x.gif?v=1623320207 2x" media="(min-width: 768px)">
-                        <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---1_720x.gif?v=1623320207 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---1_720x.gif?v=1623320207 2x">
-                        <img class="lazyload" loading="lazy" aria-hidden="true" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---1_720x.gif?v=1623320207" alt="Good Night">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969383.jpg?k=396bad3a3d79882256e56a12bc5b9aa37399f0bdd0e17c5450f273892cf07214&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969383.jpg?k=396bad3a3d79882256e56a12bc5b9aa37399f0bdd0e17c5450f273892cf07214&o=&hp=1 2x" media="(min-width: 1440px)">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969383.jpg?k=396bad3a3d79882256e56a12bc5b9aa37399f0bdd0e17c5450f273892cf07214&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969383.jpg?k=396bad3a3d79882256e56a12bc5b9aa37399f0bdd0e17c5450f273892cf07214&o=&hp=1 2x" media="(min-width: 992px)">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969383.jpg?k=396bad3a3d79882256e56a12bc5b9aa37399f0bdd0e17c5450f273892cf07214&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969383.jpg?k=396bad3a3d79882256e56a12bc5b9aa37399f0bdd0e17c5450f273892cf07214&o=&hp=1 2x" media="(min-width: 768px)">
+                        <source data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969383.jpg?k=396bad3a3d79882256e56a12bc5b9aa37399f0bdd0e17c5450f273892cf07214&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969383.jpg?k=396bad3a3d79882256e56a12bc5b9aa37399f0bdd0e17c5450f273892cf07214&o=&hp=1 2x">
+                        <img class="lazyload" loading="lazy" aria-hidden="true" data-src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969383.jpg?k=396bad3a3d79882256e56a12bc5b9aa37399f0bdd0e17c5450f273892cf07214&o=&hp=1" alt="Calm Down">
                     </picture>
                 </div>
             </div>
@@ -192,23 +172,23 @@
         <div class="glide__bullets product-image-slider__bullets" data-glide-el="controls[nav]">
             
             <div class="glide__bullet product-image-slider__bullet" data-glide-dir="=0">
-                <img class="lazyload" loading="lazy" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-3_100x.gif?v=1623320207" alt="Good Night">
+                <img class="lazyload" loading="lazy" data-src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969374.jpg?k=e7b9ebbf279f198d6ebbfd11d0033b75deb41d8a17ed03adaadf56b902b45148&o=&hp=1" alt="Stadorm A001">
             </div>
             
             <div class="glide__bullet product-image-slider__bullet" data-glide-dir="=1">
-                <img class="lazyload" loading="lazy" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---5_100x.gif?v=1623320207" alt="Good Night">
+                <img class="lazyload" loading="lazy" data-src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969367.jpg?k=b17c7a342786babea272c9a54ced2dd30e1e28404d351231e8f8874c379edaf1&o=&hp=1" alt="Calm Down">
             </div>
             
             <div class="glide__bullet product-image-slider__bullet" data-glide-dir="=2">
-                <img class="lazyload" loading="lazy" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-2_100x.gif?v=1623320207" alt="Good Night">
+                <img class="lazyload" loading="lazy" data-src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969359.jpg?k=b19576e11b0be5034017edc7249932961606373460aa3af0681e4c9334db49f9&o=&hp=1" alt="Calm Down">
             </div>
             
             <div class="glide__bullet product-image-slider__bullet" data-glide-dir="=3">
-                <img class="lazyload" loading="lazy" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---4_100x.gif?v=1623320207" alt="Good Night">
+                <img class="lazyload" loading="lazy" data-src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969374.jpg?k=e7b9ebbf279f198d6ebbfd11d0033b75deb41d8a17ed03adaadf56b902b45148&o=&hp=1" alt="Calm Down">
             </div>
             
             <div class="glide__bullet product-image-slider__bullet" data-glide-dir="=4">
-                <img class="lazyload" loading="lazy" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN---1_100x.gif?v=1623320207" alt="Good Night">
+                <img class="lazyload" loading="lazy" data-src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969383.jpg?k=396bad3a3d79882256e56a12bc5b9aa37399f0bdd0e17c5450f273892cf07214&o=&hp=1" alt="Calm Down">
             </div>
             
         </div>
@@ -219,13 +199,13 @@
     <div class="product-template__column">
         <div class="product-content">
             <h1 class="product-content__title">Stadorm A001</h1>
-            <p>Akurdi ,Pune</p>
-            <div class="product-content__desc"><p><meta charset="utf-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium reiciendis aliquid quas laudantium maxime excepturi, sapiente, dicta similique recusandae, vel iusto nisi provident? Quos asperiores consequatur tempore minima voluptatibus ipsam. <br></p>
-<p><strong>58 beds available</strong></p></div>
+            
+            <div class="product-content__desc"><meta charset="utf-8">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, natus repellendus? Nostrum ad perferendis ratione debitis quia illum cupiditate hic voluptatem non tenetur dolorum, eaque placeat reprehenderit, cum voluptate minus.</p>
+<p><strong>Akurdi, Pune</strong></p></div>
             <div class="product-content__form">
-                <form id="AddToCartForm" action="" method="post" enctype="multipart/form-data">
-                {% csrf_token %}
-    <input type="hidden" name="id" value="38122287202478" />
+                <form id="AddToCartForm" action="/cart/add" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id" value="38122290380974" />
     <input type="hidden" name="quantity" value="1" min="1">
     
 <div class="product-recharge-selector">
@@ -233,8 +213,8 @@
         <input class="product-recharge-selector__mode-input" id="product-recharge-selector__once" type="radio" name="subscription" value="false" checked/>
         <label class="product-recharge-selector__mode-label" for="product-recharge-selector__once">
             <div>
-                <div class="product-recharge-selector__mode-label-text">Free Visit</div>
-                <div class="product-recharge-selector__mode-label-price"><strong>₹0</strong> — Book only if you like it.</div>
+                <div class="product-recharge-selector__mode-label-text">Schedule Free Visit</div>
+                <div class="product-recharge-selector__mode-label-price"><strong>₹0</strong> — Book only if you like it</div>
             </div>
         </label>
     </div>
@@ -243,20 +223,25 @@
         <label class="product-recharge-selector__mode-label" for="product-recharge-selector__recurring">
             <div>
                 <div class="product-recharge-selector__mode-label-text">Book Room</div>
-                <div class="product-recharge-selector__mode-label-price"><strong>₹3,999/month</strong> — 3 Days Cancellation Policy</div>
+                <div class="product-recharge-selector__mode-label-price"><strong>From ₹3,999</strong> — 3 Days Cancellation Policy</div>
             </div>
         </label>
         <div class="js-selling-plans">
             <div class="product-recharge-selector__frequencies">
                 
                 <div class="product-recharge-selector__frequency" data-percentage="15">
-                    <input class="product-recharge-selector__frequency-input" id="4 Week(s)" type="radio" name="selling_plan" value="63996078" checked/>
-                    <label class="product-recharge-selector__frequency-label" for="4 Week(s)">1 Year</label>
+                    <input class="product-recharge-selector__frequency-input" id="4 Months" type="radio" name="selling_plan" value="63930542" checked/>
+                    <label class="product-recharge-selector__frequency-label" for="4 Months">4 Months</label>
                 </div>
                 
                 <div class="product-recharge-selector__frequency" data-percentage="15">
-                    <input class="product-recharge-selector__frequency-input" id="8 Week(s)" type="radio" name="selling_plan" value="64028846" />
-                    <label class="product-recharge-selector__frequency-label" for="8 Week(s)">6 Months</label>
+                    <input class="product-recharge-selector__frequency-input" id="8 Months" type="radio" name="selling_plan" value="63963310" />
+                    <label class="product-recharge-selector__frequency-label" for="8 Months">8 Months</label>
+                </div>
+                
+                <div class="product-recharge-selector__frequency" data-percentage="15">
+                    <input class="product-recharge-selector__frequency-input" id="1 Year" type="radio" name="selling_plan" value="64159918" />
+                    <label class="product-recharge-selector__frequency-label" for="1 Year">1 Year</label>
                 </div>
                 
             </div>
@@ -266,38 +251,37 @@
     <div class="product-content__action">
         
         <button class="product-content__button button js-ajax-add-to-cart" type="submit" name="add" id="AddToCart">
-            <span>Checkout — </span>
-            <span class="js-product-price">₹0</span>
+            <span>PROCEED</span>
         </button>
         
         
-        <p class="product-content__claim">Join Stadorm</p>
+        <!-- <p class="product-content__claim">text below proceed button</p> -->
     </div>
     <div class="product-content__fixed-button" id="sticky-product-form" data-product-form-bar>
         <div class="product-sticky-desktop">
             <div class="product-sticky-desktop__start">
                 <div class="product-sticky-desktop__image">
-                    <img src="//cdn.shopify.com/s/files/1/0535/7273/1054/products/GN-3_120x.gif?v=1623320207" alt="Good Night">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969359.jpg?k=b19576e11b0be5034017edc7249932961606373460aa3af0681e4c9334db49f9&o=&hp=1" alt="Stadorm A001">
                 </div>
                 <div class="product-sticky-desktop__titles">
-                    <h2 class="product-sticky-desktop__title" style="color: #5B618F !important;">Good Night</h2>
-                    <p class="product-sticky-desktop__desc">Bio-Frequency Sleep Aid Patches</p>
+                    <h2 class="product-sticky-desktop__title" style="color: #7594B3 !important;">Stadorm A001</h2>
+                    <p class="product-sticky-desktop__desc">Akurdi, Pune</p>
                 </div>
             </div>
             <div class="product-sticky-desktop__end">
                     <div class="product-sticky-desktop__prices">
-                        <div class="product-sticky-desktop__price js-product-price">$39.99</div>
-                        <div class="product-sticky-desktop__purchase-type js-product-purchase-type">ONETIME</div>
+                        <!-- <div class="product-sticky-desktop__price js-product-price">₹3,999</div> -->
+                        <!-- <div class="product-sticky-desktop__purchase-type js-product-purchase-type">ONETIME</div> -->
                     </div>
-                    <button class="product-sticky-desktop__button button js-ajax-add-to-cart" type="submit">ADD TO BAG
+                    <button class="product-sticky-desktop__button button js-ajax-add-to-cart" type="submit">PROCEED
                     </button>
             </div>
         </div>
         <div class="product-sticky-mobile">
-            <p class="product-content__fixed-button-claim">Feel the difference. 100% Risk-Free.</p>
+            <p class="product-content__fixed-button-claim">text above fixed proceed button</p>
             <button  class="product-content__button button js-ajax-add-to-cart" type="submit">
-                <span>TRY TODAY — </span>
-                <span class="js-product-price">$39.99</span>
+                <span>PROCEED</span>
+                <!-- <span class="js-product-price">₹3,999</span> -->
             </button>
         </div>
     </div>
@@ -306,420 +290,59 @@
         </div>
     </div>
 </div>
-<div id="shopify-section-product-security-tags" class="shopify-section"><div class="product-security-tags-wrapper">
-    <div class="product-security-tags" style="/*background: linear-gradient(90deg,  0%,  100%);*/">
-        <div class="product-security-tags__tags">
-            <div class="product-security-tags__list product-security-tags__list--first">
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Free Shipping USA Only</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Money-Back Guarantee</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Secure Checkout</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">All Natural</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Environment Friendly</span>
-                </div>
-                
-            </div>
-            <div class="product-security-tags__list product-security-tags__list--second">
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Free Shipping USA Only</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Money-Back Guarantee</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Secure Checkout</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">All Natural</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Environment Friendly</span>
-                </div>
-                
-            </div>
-            <div class="product-security-tags__list product-security-tags__list--second">
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Free Shipping USA Only</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Money-Back Guarantee</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Secure Checkout</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">All Natural</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Environment Friendly</span>
-                </div>
-                
-            </div>
-            <div class="product-security-tags__list product-security-tags__list--second">
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Free Shipping USA Only</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Money-Back Guarantee</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Secure Checkout</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">All Natural</span>
-                </div>
-                
-                <div class="product-security-tags__item">
-                    <svg class="product-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
-                    </svg>
-                    <span class="product-security-tags__title">Environment Friendly</span>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div id="shopify-section-product-message" class="shopify-section"><div class="product-message">
-    <div class="product-message__container">
-        <div class="product-message__image-wrapper">
-            <picture>
-                <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Good-Night-Patch---Large_b01493a1-b125-4f71-8137-4d13aee0efc0_2560x.gif?v=1623321547 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Good-Night-Patch---Large_b01493a1-b125-4f71-8137-4d13aee0efc0_2560x.gif?v=1623321547 2x" media="(min-width: 1920px)">
-                <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Good-Night-Patch---Large_b01493a1-b125-4f71-8137-4d13aee0efc0_1440x.gif?v=1623321547 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Good-Night-Patch---Large_b01493a1-b125-4f71-8137-4d13aee0efc0_1440x.gif?v=1623321547 2x" media="(min-width: 1440px)">
-                <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Good-Night-Patch---Desktop_2174c797-eafe-44ff-b093-487dd3215938_960x.gif?v=1623321610 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Good-Night-Patch---Desktop_2174c797-eafe-44ff-b093-487dd3215938_1920x.gif?v=1623321610 2x" media="(min-width: 992px)">
-                <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Good-Night-Patch---Tablet_c00b1a41-669e-4f4b-a844-007d710e1884_720x.gif?v=1623321628 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Good-Night-Patch---Tablet_c00b1a41-669e-4f4b-a844-007d710e1884_1440x.gif?v=1623321628 2x" media="(min-width: 768px)">
-                <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Good-Night-Patch---Mobile_63463a49-cbbd-4b35-842d-8b9bfdd17e2a_320x.gif?v=1623321648 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Good-Night-Patch---Mobile_63463a49-cbbd-4b35-842d-8b9bfdd17e2a_540x.gif?v=1623321648 2x">
-                <img loading="lazy" class="lazyload product-message__image" aria-hidden="true" alt="How Patches Work" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Good-Night-Patch---Mobile_63463a49-cbbd-4b35-842d-8b9bfdd17e2a_540x.gif?v=1623321648">
-            </picture>
-        </div>
-        <div class="product-message__grid">
-            <div class="product-message__grid-item">
-                <div class="product-message__titles">
-                    <div class="product-message__caption">SLEEP AID PATCHES</div>
-                    <h2 class="product-message__title">Sleep better at night, dream bigger by day.</h2>
-                    <p class="product-message__subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio alias iure atque magnam sed quidem asperiores, nostrum veniam corrupti! Labore voluptatibus dolorem dolorum cum facere architecto illo perspiciatis voluptas placeat? </p>
-                </div>
-            </div>
-            <div class="product-message__grid-item"></div>
-        </div>
-    </div>
-</div>
-</div>
-<div id="shopify-section-product-features-one" class="shopify-section"><div class="product-benefits-icons">
+<h2 style="text-align: center;">Amenities</h2>
+<div id="shopify-section-product-features-one" class="shopify-section">
+    <div class="product-benefits-icons">
     <div class="product-benefits-icons__grid">
         <div class="product-benefits-icons__grid-item">
-            <img loading="lazy" class="lazyload product-benefits-icons__icon" data-src="https://yoico.in/img/solar-energy.png" alt=""/>
-            <h3 class="product-benefits-icons__title">Water Heater</h3>
-            <p class="product-benefits-icons__subtitle">We harness the power of the sun to heat your water. ♨️            </p>
+            <img loading="lazy" class="lazyload product-benefits-icons__icon" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/CD_-_NO_INGREDIENTS_100x.png?v=1628270384" alt=""/>
+            <h3 class="product-benefits-icons__title">Latex-free</h3>
+            <p class="product-benefits-icons__subtitle">Kind to sensitive skin, tough against the elements</p>
         </div>
         <div class="product-benefits-icons__grid-item">
-            <img loading="lazy" class="lazyload product-benefits-icons__icon" data-src="https://yoico.in/img/no.svg" alt=""/>
-            <h3 class="product-benefits-icons__title">Zero Brokerage</h3>
-            <p class="product-benefits-icons__subtitle">Pay Less, Live More.</p>
+            <img loading="lazy" class="lazyload product-benefits-icons__icon" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/CD_-_NO_SIDE_EFFECTS_100x.png?v=1628270384" alt=""/>
+            <h3 class="product-benefits-icons__title">100% Drug-Free</h3>
+            <p class="product-benefits-icons__subtitle">Effective results without harsh chemicals or ingredients.</p>
         </div>
         <div class="product-benefits-icons__grid-item">
-            <img loading="lazy" class="lazyload product-benefits-icons__icon" data-src="https://yoico.in/img/bills.svg" alt=""/>
-            <h3 class="product-benefits-icons__title">No Hidden Bills</h3>
-            <p class="product-benefits-icons__subtitle">Leave your water and electricity bill on us. 😉</p>
+            <img loading="lazy" class="lazyload product-benefits-icons__icon" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/CD_-_DRUG_FREE_100x.png?v=1628270384" alt=""/>
+            <h3 class="product-benefits-icons__title">No Side Effects</h3>
+            <p class="product-benefits-icons__subtitle">Non-invasive & naturally regulated by your body.</p>
         </div>
         <div class="product-benefits-icons__grid-item">
-            <img loading="lazy" class="lazyload product-benefits-icons__icon" data-src="https://yoico.in/img/water-filter.svg" alt=""/>
-            <h3 class="product-benefits-icons__title">Water Purifier</h3>
-            <p class="product-benefits-icons__subtitle">Pure Water, Healthy Life. 💧</p>
+            <img loading="lazy" class="lazyload product-benefits-icons__icon" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/CD_-_Safe_on_All_Ages_100x.png?v=1628270384" alt=""/>
+            <h3 class="product-benefits-icons__title">Safe On All Ages</h3>
+            <p class="product-benefits-icons__subtitle">Designed to be simple, discreet & safe to wear daily.</p>
         </div>
     </div>
 </div>
 </div>
-<div id="shopify-section-product-approach" class="shopify-section"><section class="productpage-benefits">
-    <div class="productpage-benefits__grid">
-        <div class="productpage-benefits__grid-item">
-            <div class="productpage-benefits__titles">
-                <div class="productpage-benefits__caption">A NATURAL APPROACH</div>
-                <h2 class="productpage-benefits__title">The wellness ritual you can stick with.</h2>
-                <p class="productpage-benefits__subtitle">Vibrants sleep aid patches help restore a natural balance to your bedtime routine, allowing your body time to refresh & repair.</p>
-                <ul class="productpage-benefits__points">
-                  
-                  
-                  <li class="productpage-benefits__point">
-                    <svg viewBox="0 0 19 15" fill="#5B618F" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.293 0.254944L6 11.5345L1.70703 7.24661L0.292969 8.65899L6 14.3592L18.707 1.66732L17.293 0.254944Z"/>
-                    </svg>
-                    <span>Drift smoothly into dreamland</span>
-                  </li>
-                  
-                  <li class="productpage-benefits__point">
-                    <svg viewBox="0 0 19 15" fill="#5B618F" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.293 0.254944L6 11.5345L1.70703 7.24661L0.292969 8.65899L6 14.3592L18.707 1.66732L17.293 0.254944Z"/>
-                    </svg>
-                    <span>Sleep more soundly</span>
-                  </li>
-                  
-                  <li class="productpage-benefits__point">
-                    <svg viewBox="0 0 19 15" fill="#5B618F" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.293 0.254944L6 11.5345L1.70703 7.24661L0.292969 8.65899L6 14.3592L18.707 1.66732L17.293 0.254944Z"/>
-                    </svg>
-                    <span>Wake up rested & ready to shine</span>
-                  </li>
-                  
-                </ul>
-            </div>
+<div id="shopify-section-product-features-one" class="shopify-section">
+    <div class="product-benefits-icons">
+    <div class="product-benefits-icons__grid">
+        <div class="product-benefits-icons__grid-item">
+            <img loading="lazy" class="lazyload product-benefits-icons__icon" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/CD_-_NO_INGREDIENTS_100x.png?v=1628270384" alt=""/>
+            <h3 class="product-benefits-icons__title">Latex-free</h3>
+            <p class="product-benefits-icons__subtitle">Kind to sensitive skin, tough against the elements</p>
         </div>
-        <div class="productpage-benefits__image-wrapper-one">
-          <svg class="productpage-benefits__image-badge" width="50" height="50" viewBox="0 0 50 50" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50 26.2236L49.5651 28.6004C49.4611 29.1684 49.2598 29.6491 48.961 30.0425C48.6663 30.4418 48.3001 30.725 47.8623 30.8922C47.4236 31.0644 46.9425 31.1027 46.4188 31.0071C45.8951 30.9114 45.4586 30.7055 45.1093 30.3894C44.7591 30.0783 44.5143 29.6834 44.3751 29.2049C44.24 28.7322 44.2244 28.2119 44.3284 27.6439L44.7633 25.2672L50 26.2236ZM45.3343 27.7658C45.2385 28.289 45.307 28.7315 45.5398 29.0932C45.7766 29.4609 46.1443 29.6902 46.6431 29.7813C47.1418 29.8724 47.5645 29.7874 47.9112 29.5264C48.262 29.2712 48.4853 28.882 48.581 28.3588L48.7835 27.2527L45.5367 26.6597L45.3343 27.7658Z" />
-            <path d="M42.0974 36.4543L41.2352 35.9709L43.2528 32.3799L47.895 34.9831L45.9259 38.488L45.0637 38.0045L46.4336 35.5663L45.4255 35.0011L44.2158 37.1543L43.3802 36.6858L44.5899 34.5325L43.5156 33.93L42.0974 36.4543Z" />
-            <path d="M44.0691 41.128L43.1947 41.9952L40.1514 38.9326L38.257 40.8115L37.5498 40.0997L40.3185 37.3537L44.0691 41.128Z"/>
-            <path d="M39.1623 45.5389L38.1109 46.1804L35.3361 41.6416L36.3875 41L39.1623 45.5389Z" />
-            <path d="M29.9134 49.563L30.5926 43.8075L31.7582 43.4585L35.4864 47.8945L34.2115 48.2762L31.5683 45.1017L31.0863 49.2118L29.9134 49.563Z" />
-            <path d="M23.0342 45.6062L23.0495 44.6186L27.1709 44.6822L27.0888 50L23.0662 49.9379L23.0814 48.9503L25.8798 48.9935L25.8976 47.8388L23.4263 47.8007L23.4411 46.8435L25.9124 46.8816L25.9314 45.6509L23.0342 45.6062Z" />
-            <path d="M18.2274 43.4834L18.7332 45.2131L19.8083 45.5707L20.2767 44.1649L21.4456 44.5537L19.7642 49.5999L17.5778 48.8728C17.1305 48.724 16.768 48.5207 16.4906 48.2629C16.2083 48.0036 16.0238 47.7073 15.9371 47.3742C15.8504 47.041 15.8695 46.687 15.9944 46.3122C16.1193 45.9373 16.3188 45.6433 16.5929 45.4302C16.8605 45.2202 17.1843 45.0984 17.5643 45.0646L16.9719 43.0658L18.2274 43.4834ZM17.1778 46.7057C17.0833 46.9893 17.1026 47.236 17.2358 47.4457C17.3673 47.6603 17.6087 47.826 17.9598 47.9428L18.9123 48.2596L19.4984 46.5006L18.546 46.1838C18.1948 46.067 17.9022 46.0551 17.6681 46.1481C17.4341 46.2411 17.2706 46.427 17.1778 46.7057Z" />
-            <path d="M12.5923 46.76L11.5602 46.0879L14.4672 41.6324L15.4993 42.3045L12.5923 46.76Z" />
-            <path d="M5.14558 40.3102L9.12226 36.7744L9.7947 37.5292L9.14482 41.6567L11.5592 39.51L12.3682 40.4181L8.39151 43.9539L7.71401 43.1934L8.36895 39.0715L5.95453 41.2183L5.14558 40.3102Z" />
-            <path d="M4.06364 33.0574L3.64073 32.0153L5.64229 31.2046C5.95291 31.3903 6.23369 31.6373 6.48463 31.9456C6.73558 32.2539 6.93344 32.5864 7.07822 32.9431C7.28586 33.4548 7.36449 33.9586 7.31409 34.4545C7.25899 34.9523 7.08643 35.3966 6.79641 35.7874C6.49977 36.1754 6.10714 36.4683 5.61849 36.6663C5.12985 36.8642 4.64621 36.9262 4.16759 36.8522C3.68236 36.7755 3.24786 36.5744 2.86409 36.2488C2.47562 35.9252 2.17661 35.5052 1.96706 34.9889C1.7918 34.557 1.70556 34.1356 1.70834 33.7245C1.71112 33.3135 1.80254 32.9321 1.98259 32.5804L2.95636 33.0386C2.72805 33.541 2.71486 34.041 2.91679 34.5386C3.04443 34.8531 3.22356 35.1057 3.45417 35.2965C3.68479 35.4873 3.94754 35.6023 4.2424 35.6413C4.53727 35.6804 4.83976 35.6371 5.14986 35.5115C5.45526 35.3878 5.70016 35.2094 5.88453 34.9762C6.06891 34.743 6.18065 34.4791 6.21975 34.1845C6.25225 33.8871 6.20564 33.5835 6.07991 33.2737C5.94656 32.9451 5.75606 32.678 5.50843 32.4722L4.06364 33.0574Z" />
-            <path d="M2.78373 22.2585L2.90498 21.1406L5.05224 21.3731C5.23784 21.6836 5.36813 22.0339 5.4431 22.4241C5.51807 22.8144 5.53479 23.2008 5.49328 23.5836C5.43375 24.1325 5.26429 24.6134 4.98491 25.0264C4.70048 25.4389 4.33796 25.7486 3.89733 25.9557C3.4522 26.1571 2.96753 26.2295 2.44332 26.1727C1.91911 26.116 1.46372 25.9419 1.07716 25.6504C0.686111 25.3533 0.398686 24.9706 0.214888 24.5024C0.0260495 24.0336 -0.0383288 23.5222 0.0217528 22.9683C0.0720029 22.505 0.195738 22.093 0.392958 21.7322C0.590179 21.3715 0.851412 21.0788 1.17666 20.8541L1.81728 21.7183C1.37812 22.0529 1.12959 22.487 1.07169 23.0208C1.0351 23.3582 1.07316 23.6655 1.1859 23.9426C1.29863 24.2198 1.47561 24.4453 1.71683 24.6191C1.95806 24.793 2.24501 24.8979 2.57768 24.9339C2.90532 24.9694 3.20558 24.928 3.47849 24.8098C3.7514 24.6916 3.97486 24.512 4.14889 24.271C4.31843 24.0245 4.42122 23.735 4.45727 23.4026C4.49551 23.0501 4.45431 22.7247 4.33368 22.4263L2.78373 22.2585Z" />
-            <path d="M7.09497 17.208C6.84795 17.7019 6.51814 18.095 6.10555 18.3873C5.69522 18.6751 5.24746 18.8395 4.76225 18.8804C4.27477 18.9145 3.79746 18.8149 3.33033 18.5817C2.86319 18.3485 2.49919 18.0281 2.23835 17.6204C1.97523 17.2059 1.83567 16.7484 1.81967 16.2478C1.80595 15.7426 1.92259 15.2431 2.16961 14.7492C2.41664 14.2553 2.74531 13.8645 3.15563 13.5767C3.56596 13.2889 4.01599 13.1257 4.50574 13.0871C4.99094 13.0462 5.46712 13.1424 5.93426 13.3756C6.40139 13.6088 6.76652 13.9326 7.02964 14.3471C7.28822 14.7593 7.42551 15.2157 7.44151 15.7163C7.4575 16.2169 7.34199 16.7142 7.09497 17.208ZM6.15616 16.7394C6.29667 16.4585 6.36008 16.173 6.34641 15.8831C6.32819 15.5909 6.23517 15.3236 6.06732 15.0813C5.90174 14.8344 5.67155 14.6374 5.37676 14.4902C5.08196 14.343 4.78605 14.2774 4.48903 14.2933C4.19427 14.3047 3.92674 14.392 3.68644 14.5552C3.44161 14.7161 3.24893 14.937 3.10842 15.2179C2.96792 15.4988 2.90677 15.7854 2.92498 16.0776C2.93866 16.3675 3.02828 16.636 3.19386 16.8828C3.36171 17.1252 3.59303 17.3199 3.88783 17.4671C4.18262 17.6142 4.4774 17.6821 4.77215 17.6707C5.06918 17.6548 5.34011 17.5664 5.58494 17.4055C5.82524 17.2423 6.01565 17.0203 6.15616 16.7394Z" />
-            <path d="M11.0319 11.4402C10.6259 11.8147 10.1781 12.0656 9.68862 12.1931C9.20288 12.317 8.72588 12.3123 8.25762 12.1789C7.78964 12.0383 7.37855 11.7764 7.02434 11.393C6.67013 11.0097 6.4433 10.5812 6.34386 10.1077C6.2447 9.62696 6.27636 9.14969 6.43884 8.67586C6.60505 8.19859 6.89119 7.77271 7.29726 7.39823C7.70334 7.02374 8.14924 6.77451 8.63498 6.65054C9.12073 6.52656 9.59945 6.53315 10.0712 6.67028C10.5394 6.80369 10.9507 7.06208 11.3049 7.44543C11.6591 7.82879 11.8858 8.26082 11.9849 8.74152C12.0806 9.2185 12.0472 9.6939 11.8848 10.1677C11.7223 10.6416 11.438 11.0657 11.0319 11.4402ZM10.3201 10.6698C10.5511 10.4568 10.7115 10.2123 10.8015 9.93627C10.8881 9.65655 10.8958 9.37368 10.8247 9.08767C10.7574 8.79822 10.6119 8.53253 10.3884 8.2906C10.1649 8.04868 9.9114 7.88263 9.62797 7.79245C9.34828 7.69883 9.06715 7.6858 8.78459 7.75337C8.49859 7.81722 8.2401 7.95565 8.00912 8.16866C7.77814 8.38167 7.61938 8.62804 7.53284 8.90775C7.44286 9.18375 7.43154 9.46647 7.49889 9.75593C7.56996 10.0419 7.71726 10.3059 7.94079 10.5478C8.16432 10.7898 8.41594 10.9575 8.69563 11.0511C8.97906 11.1413 9.26377 11.1545 9.54977 11.0906C9.83233 11.0231 10.0891 10.8828 10.3201 10.6698Z" />
-            <path d="M12.5063 3.27677L14.7543 2.38573C15.2915 2.17278 15.8063 2.08863 16.2985 2.13327C16.7936 2.17134 17.2282 2.33151 17.6021 2.61379C17.9807 2.8942 18.2682 3.28159 18.4645 3.77595C18.6608 4.2703 18.7174 4.74922 18.6342 5.2127C18.5557 5.67431 18.3502 6.09089 18.0178 6.46243C17.6882 6.8274 17.2548 7.11636 16.7175 7.32931L14.4696 8.22035L12.5063 3.27677ZM16.288 6.41245C16.7828 6.21631 17.1221 5.92379 17.3058 5.5349C17.4924 5.13943 17.4922 4.70629 17.3052 4.23548C17.1182 3.76466 16.8221 3.45156 16.4167 3.29617C16.0142 3.1342 15.5656 3.15129 15.0707 3.34743L14.0245 3.76213L15.2418 6.82714L16.288 6.41245Z" />
-            <path d="M29.8542 0.648382L26.9704 5.67684L25.7612 5.54123L24.0726 0L25.3952 0.148323L26.5808 4.10405L28.6374 0.511926L29.8542 0.648382Z" />
-            <path d="M32.4332 1.35671L33.5818 1.80205L31.6556 6.76018L30.5071 6.31484L32.4332 1.35671Z" />
-            <path d="M38.8005 7.63365C38.987 7.89231 39.0813 8.16447 39.0834 8.45015C39.0885 8.73175 38.9926 9.00461 38.7959 9.26873C38.5174 9.64254 38.156 9.82216 37.7118 9.80757C37.2747 9.79195 36.7776 9.57697 36.2204 9.16264L34.012 7.52045L37.1905 3.25405L39.2769 4.80551C39.7975 5.19262 40.1219 5.58855 40.2501 5.9933C40.3824 6.40107 40.3215 6.77562 40.0672 7.11693C39.9128 7.32415 39.7242 7.47123 39.5015 7.55815C39.2828 7.6481 39.0491 7.67326 38.8005 7.63365ZM37.6187 4.72799L36.8695 5.73364L37.8517 6.464C38.0957 6.64546 38.3126 6.7404 38.5022 6.74883C38.6919 6.75725 38.8488 6.67817 38.9729 6.51158C39.097 6.34498 39.1263 6.17418 39.0607 5.99916C38.9982 5.82008 38.845 5.63981 38.6009 5.45835L37.6187 4.72799ZM36.7012 8.36463C36.9615 8.55819 37.1885 8.66069 37.3822 8.67214C37.58 8.68661 37.7455 8.60446 37.8787 8.42567C38.142 8.07217 38.0114 7.70035 37.4867 7.31022L36.3337 6.45283L35.5481 7.50725L36.7012 8.36463Z" />
-            <path d="M42.5058 14.4106L41.7 14.9829L39.3119 11.6263L43.651 8.54509L45.9818 11.8211L45.1759 12.3933L43.5545 10.1144L42.6123 10.7834L44.0443 12.7961L43.2632 13.3507L41.8313 11.3381L40.8271 12.0512L42.5058 14.4106Z" />
-            <path d="M43.1026 18.1239C42.9697 17.725 42.8937 17.3206 42.8746 16.9105C42.862 16.5037 42.9046 16.1585 43.0025 15.875L44.0149 15.9787C43.9283 16.2478 43.8865 16.5473 43.8895 16.8773C43.8926 17.2072 43.9438 17.5212 44.0431 17.8192C44.1536 18.1508 44.2833 18.3799 44.4324 18.5065C44.5863 18.6315 44.745 18.6668 44.9085 18.6124C45.0288 18.5724 45.1114 18.4915 45.1563 18.3698C45.2077 18.2513 45.2326 18.1095 45.2311 17.9446C45.2311 17.7844 45.2184 17.5697 45.1928 17.3006C45.1561 16.8858 45.1426 16.5406 45.1524 16.2651C45.1621 15.9896 45.2383 15.7293 45.3811 15.4843C45.5255 15.2441 45.7661 15.068 46.1028 14.956C46.3962 14.8584 46.6872 14.8497 46.9758 14.9299C47.2692 15.0085 47.5385 15.1832 47.7837 15.454C48.0304 15.7296 48.2307 16.0981 48.3844 16.5595C48.4917 16.8815 48.5581 17.2091 48.5837 17.5422C48.6092 17.8754 48.5882 18.1813 48.5208 18.46L47.5131 18.3948C47.6224 17.8406 47.5993 17.3304 47.444 16.8642C47.3351 16.5374 47.2013 16.3123 47.0426 16.1889C46.8856 16.0704 46.7204 16.0399 46.5473 16.0974C46.3741 16.155 46.2738 16.2871 46.2465 16.4938C46.2256 16.7036 46.2359 17.0071 46.2774 17.4044C46.3141 17.8192 46.3276 18.1644 46.3179 18.4399C46.3082 18.7154 46.2335 18.9725 46.0939 19.2111C45.9559 19.4545 45.7186 19.6322 45.3819 19.7442C45.0932 19.8402 44.8014 19.8465 44.5065 19.7631C44.2179 19.6829 43.9502 19.505 43.7034 19.2294C43.4566 18.9538 43.2564 18.5853 43.1026 18.1239Z" />
-          </svg>
-          <div class="productpage-benefits__image-wrapper">
-            <img loading="lazy" class="lazyload productpage-benefits__image" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Sleep-Patch_1080x.png?v=1628259494" aria-hidden="true" alt="Appling Patch"/>
-          </div>
+        <div class="product-benefits-icons__grid-item">
+            <img loading="lazy" class="lazyload product-benefits-icons__icon" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/CD_-_NO_SIDE_EFFECTS_100x.png?v=1628270384" alt=""/>
+            <h3 class="product-benefits-icons__title">100% Drug-Free</h3>
+            <p class="product-benefits-icons__subtitle">Effective results without harsh chemicals or ingredients.</p>
         </div>
-    </div>
-</section>
-</div>
-<div id="shopify-section-product-how" class="shopify-section"><div class="product-how">
-    <div class="product-how__container">
-        <div class="product-how__image-wrapper">
-            <picture>
-                <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/how-it-works---large_c95f6740-6b31-4005-96c2-2918f7fb09a0_2560x.gif?v=1623322810 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/how-it-works---large_c95f6740-6b31-4005-96c2-2918f7fb09a0_2560x.gif?v=1623322810 2x" media="(min-width: 1920px)">
-                <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/how-it-works---large_c95f6740-6b31-4005-96c2-2918f7fb09a0_1440x.gif?v=1623322810 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/how-it-works---large_c95f6740-6b31-4005-96c2-2918f7fb09a0_1440x.gif?v=1623322810 2x" media="(min-width: 1440px)">
-                <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-how-it-works---Desktop_a52517e0-a733-4577-8298-328bccdb50bd_960x.gif?v=1623322831 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-how-it-works---Desktop_a52517e0-a733-4577-8298-328bccdb50bd_1920x.gif?v=1623322831 2x" media="(min-width: 992px)">
-                <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-how-it-works---tablet_914abd0b-12b7-4498-bd1c-5812e44c6a4a_720x.gif?v=1623322889 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-how-it-works---tablet_914abd0b-12b7-4498-bd1c-5812e44c6a4a_1440x.gif?v=1623322889 2x" media="(min-width: 768px)">
-                <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-How-it-works---Mobile_59d1ba95-6a85-4f1a-adfd-d7e1899cc152_320x.gif?v=1623323114 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-How-it-works---Mobile_59d1ba95-6a85-4f1a-adfd-d7e1899cc152_540x.gif?v=1623323114 2x">
-                <img loading="lazy" class="lazyload product-how__image" aria-hidden="true" alt="How Patches Work" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-How-it-works---Mobile_59d1ba95-6a85-4f1a-adfd-d7e1899cc152_540x.gif?v=1623323114">
-            </picture>
-            <!--<picture>
-                <source data-srcset="https://cdn.shopify.com/s/files/1/0535/7273/1054/files/how-it-works---large_c95f6740-6b31-4005-96c2-2918f7fb09a0.gif?v=1623322810 1x, https://cdn.shopify.com/s/files/1/0535/7273/1054/files/how-it-works---large_c95f6740-6b31-4005-96c2-2918f7fb09a0.gif?v=1623322810 2x" media="(min-width: 1440px)">
-                <source data-srcset="https://cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-how-it-works---Desktop_a52517e0-a733-4577-8298-328bccdb50bd.gif?v=1623322831 1x, https://cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-how-it-works---Desktop_a52517e0-a733-4577-8298-328bccdb50bd.gif?v=1623322831 2x" media="(min-width: 992px)">
-                <source data-srcset="https://cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-how-it-works---tablet_914abd0b-12b7-4498-bd1c-5812e44c6a4a.gif?v=1623322889 1x, https://cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-how-it-works---tablet_914abd0b-12b7-4498-bd1c-5812e44c6a4a.gif?v=1623322889 2x" media="(min-width: 768px)">
-                <source data-srcset="https://cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-How-it-works---Mobile_59d1ba95-6a85-4f1a-adfd-d7e1899cc152.gif?v=1623323114 1x, https://cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-How-it-works---Mobile_59d1ba95-6a85-4f1a-adfd-d7e1899cc152.gif?v=1623323114 2x">
-                <img class="lazyload product-how__image" aria-hidden="true" alt="How Patches Work" data-src="https://cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-How-it-works---Mobile_59d1ba95-6a85-4f1a-adfd-d7e1899cc152.gif?v=1623323114">
-            </picture>-->
+        <div class="product-benefits-icons__grid-item">
+            <img loading="lazy" class="lazyload product-benefits-icons__icon" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/CD_-_DRUG_FREE_100x.png?v=1628270384" alt=""/>
+            <h3 class="product-benefits-icons__title">No Side Effects</h3>
+            <p class="product-benefits-icons__subtitle">Non-invasive & naturally regulated by your body.</p>
         </div>
-        <div class="product-how__grid">
-            <div class="product-how__grid-item"></div>
-            <div class="product-how__grid-item">
-                <div class="product-how__titles">
-                    <div class="product-how__caption">HOW IT WORKS</div>
-                    <h2 class="product-how__title">Let’s Talk Energy</h2>
-                    <div class="product-how__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, minus voluptatem aliquam quo reprehenderit commodi
-<br>
-<br>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos libero, sint autem similique qui velit odio iste voluptatem adipisci et quod quae laudantium beatae deleniti ab tempore ipsa? Velit, molestiae.
-<br>
-<br>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia repudiandae esse reprehenderit, ipsum sed hic ducimus exercitationem quasi quo nobis maxime ipsa minus adipisci modi repellendus</div>
-                </div>
-            </div>
+        <div class="product-benefits-icons__grid-item">
+            <img loading="lazy" class="lazyload product-benefits-icons__icon" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/CD_-_Safe_on_All_Ages_100x.png?v=1628270384" alt=""/>
+            <h3 class="product-benefits-icons__title">Safe On All Ages</h3>
+            <p class="product-benefits-icons__subtitle">Designed to be simple, discreet & safe to wear daily.</p>
         </div>
     </div>
 </div>
 </div>
-<div id="shopify-section-product-breakdown" class="shopify-section"><div class="product-features">
-    <div class="product-features__titles">
-        <div class="product-features__caption">WHAT’S INSIDE</div>
-        <h2 class="product-features__title">A good night’s sleep</h2>
-        <p class="product-features__subtitle">The deep sleep of your dreams</p>
-    </div>
-    <div class="patch-breakdown">
-    <div class="patch-breakdown__layers">
-        <div class="patch-breakdown__layer patch-breakdown__layer--one patch-breakdown__layer--active">
-            <div class="patch-layer">
-                <img loading="lazy" class="lazyload patch-layer__image" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-Patch-1_720x.png?v=1629115981" alt="">
-                <div class="patch-layer__content">
-                    <svg class="patch-layer__divider" width="92" height="8" viewBox="0 0 92 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="92" y1="4" x2="4" y2="4" stroke="#CCCCCC" stroke-width="2" stroke-dasharray="5 5"/>
-                        <circle cx="4" cy="4" r="4" fill="#CCCCCC"/>
-                    </svg>
-                    <div class="patch-layer__text"><p><strong>Breathable Fabric Layer</strong></p><p>Embedded with bio-frequencies that promote a healthy sleep cycle. &nbsp;</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="patch-breakdown__layer patch-breakdown__layer--two">
-            <div class="patch-layer">
-                <img loading="lazy" class="lazyload patch-layer__image" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/RP-Patch-2_720x.png?v=1629115269" alt="">
-                <div class="patch-layer__content">
-                    <svg class="patch-layer__divider" width="92" height="8" viewBox="0 0 92 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="92" y1="4" x2="4" y2="4" stroke="#CCCCCC" stroke-width="2" stroke-dasharray="5 5"/>
-                        <circle cx="4" cy="4" r="4" fill="#CCCCCC"/>
-                    </svg>
-                    <div class="patch-layer__text"><p><strong>Enhanced Medical Adhesive</strong>&nbsp;</p><p>Skin activated conductive properties remain effective for up to 48 hours.</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="patch-breakdown__layer patch-breakdown__layer--three">
-            <div class="patch-layer">
-                <img loading="lazy" class="lazyload patch-layer__image" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/RP-Patch-3_720x.png?v=1629115272" alt="">
-                <div class="patch-layer__content">
-                    <svg class="patch-layer__divider" width="92" height="8" viewBox="0 0 92 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="92" y1="4" x2="4" y2="4" stroke="#CCCCCC" stroke-width="2" stroke-dasharray="5 5"/>
-                        <circle cx="4" cy="4" r="4" fill="#CCCCCC"/>
-                    </svg>
-                    <div class="patch-layer__text"><p><strong>High Capacitance Film</strong></p><p>Safely transfers energy signals within range of your body’s own energy field.</p></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    
-<div class="product-features-slider-wrapper">
-    <div class="product-features-slider__layers">
-        <div class="product-features-slider__layer product-features-slider__layer--active">
-            <div class="product-features-slider__layer-wrapper">
-                <svg class="product-features-slider__layer-icon product-features-slider__layer-icon--one" viewBox="0 0 30 30" fill="#21262E" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="15" cy="15" r="15"/>
-                    <path d="M16.5848 10.2V20H14.3168V12.02H12.3568V10.2H16.5848Z" fill="white"/>
-                </svg>
-                <img data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/GN-Patch-1_460x.png?v=1629115981" alt="" class="lazyload">
-            </div>
-        </div>
-        <div class="product-features-slider__layer">
-            <div class="product-features-slider__layer-wrapper">
-                <svg class="product-features-slider__layer-icon product-features-slider__layer-icon--two" viewBox="0 0 30 30" fill="#21262E" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="15" cy="15" r="15" />
-                    <path d="M18.7391 18.152V20H11.3331V18.53L15.1131 14.96C15.5144 14.5773 15.7851 14.2507 15.9251 13.98C16.0651 13.7 16.1351 13.4247 16.1351 13.154C16.1351 12.762 15.9998 12.4633 15.7291 12.258C15.4678 12.0433 15.0804 11.936 14.5671 11.936C14.1378 11.936 13.7504 12.02 13.4051 12.188C13.0598 12.3467 12.7704 12.5893 12.5371 12.916L10.8851 11.852C11.2678 11.2827 11.7951 10.8393 12.4671 10.522C13.1391 10.1953 13.9091 10.032 14.7771 10.032C15.5051 10.032 16.1398 10.1533 16.6811 10.396C17.2318 10.6293 17.6564 10.9653 17.9551 11.404C18.2631 11.8333 18.4171 12.342 18.4171 12.93C18.4171 13.462 18.3051 13.9613 18.0811 14.428C17.8571 14.8947 17.4231 15.4267 16.7791 16.024L14.5251 18.152H18.7391Z" fill="white"/>
-                </svg>
-                <img data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/RP-Patch-2_460x.png?v=1629115269" alt="" class="lazyload">
-            </div>
-        </div>
-        <div class="product-features-slider__layer">
-            <div class="product-features-slider__layer-wrapper">
-                <svg class="product-features-slider__layer-icon product-features-slider__layer-icon--three" viewBox="0 0 30 30" fill="#21262E" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="15" cy="15" r="15" />
-                    <path d="M15.9814 14.19C16.8401 14.33 17.4981 14.652 17.9554 15.156C18.4128 15.6507 18.6414 16.2667 18.6414 17.004C18.6414 17.5733 18.4921 18.1007 18.1934 18.586C17.8948 19.062 17.4374 19.4447 16.8214 19.734C16.2148 20.0233 15.4681 20.168 14.5814 20.168C13.8908 20.168 13.2094 20.0793 12.5374 19.902C11.8748 19.7153 11.3101 19.454 10.8434 19.118L11.7254 17.382C12.0988 17.662 12.5281 17.8813 13.0134 18.04C13.5081 18.1893 14.0121 18.264 14.5254 18.264C15.0948 18.264 15.5428 18.1567 15.8694 17.942C16.1961 17.718 16.3594 17.4053 16.3594 17.004C16.3594 16.2013 15.7481 15.8 14.5254 15.8H13.4894V14.302L15.5054 12.02H11.3334V10.2H18.1934V11.67L15.9814 14.19Z" fill="white"/>
-                </svg>
-                <img data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/RP-Patch-3_460x.png?v=1629115272" alt="" class="lazyload">
-            </div>
-        </div>
-    </div>
-    <div class="glide product-features-slider" id="product-features-slider">
-        <div class="glide__track" data-glide-el="track">
-            <div class="glide__slides product-features-slider__slides">
-                <div class="product-features-slider__slide">
-                    <div class="product-features-slider__text"><p><strong>Breathable Fabric Layer</strong></p><p>Embedded with bio-frequencies that promote a healthy sleep cycle. &nbsp;</p></div>
-                </div>
-                <div class="product-features-slider__slide">
-                    <div class="product-features-slider__text"><p><strong>Enhanced Medical Adhesive</strong>&nbsp;</p><p>Skin activated conductive properties remain effective for up to 48 hours.</p></div>
-                </div>
-                <div class="product-features-slider__slide">
-                    <div class="product-features-slider__text"><p><strong>High Capacitance Film</strong></p><p>Safely transfers energy signals within range of your body’s own energy field.</p></div>
-                </div>
-            </div>
-            <div class="glide__bullets product-features-slider__bullets" data-glide-el="controls[nav]">
-                <div class="glide__bullet product-features-slider__bullet" data-glide-dir="=0"></div>
-                <div class="glide__bullet product-features-slider__bullet" data-glide-dir="=1"></div>
-                <div class="glide__bullet product-features-slider__bullet" data-glide-dir="=2"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-</div>
-</div>
-
-
 
 <div id="shopify-section-product-faq" class="shopify-section"><section class="science-page-faq">
     <div class="science-page-faq__container">
@@ -730,10 +353,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia repudiandae
                 <div class="accordion-item">
                     <button id="accordion-button-1" aria-expanded="false">
                         <span class="icon" aria-hidden="true"></span>
-                        <span class="accordion-title">How do I apply the Good Night patch?</span>
+                        <span class="accordion-title">How do I apply the Calm Down patch?</span>
                     </button>
                     <div class="accordion-content">
-                        <div class="accordion-text">Before bed, apply one good night patch to clean skin on the shoulder, forearm, or foot.  Patch lasts all night. Remove and discard when you wake up.  Use nightly for best results.  Do not use on open wounds or damaged skin.</div>
+                        <div class="accordion-text">Apply one patch regularly to clean skin anywhere on the body such as shoulder, forearm or foot. The patch lasts up to 48 hours. Remove before going to sleep. Apply a new patch daily as needed. Do not use on open wounds or damaged skin.</div>
                     </div>
                 </div>
                 
@@ -743,10 +366,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia repudiandae
                 <div class="accordion-item">
                     <button id="accordion-button-2" aria-expanded="false">
                         <span class="icon" aria-hidden="true"></span>
-                        <span class="accordion-title">Are Good Night patches safe on all ages?</span>
+                        <span class="accordion-title">Are Calm Down patches safe on all ages?</span>
                     </button>
                     <div class="accordion-content">
-                        <div class="accordion-text">Absolutely!  Our patches naturally resonate with the body's energetic field to restore balance and promote vitality.  There are no active ingredients, no side effects, and are safely effective on all ages.</div>
+                        <div class="accordion-text">Absolutely!  Our patches naturally resonate with the body's energetic field to restore balance and promote vitality.  There are no active ingredients, no side effects, and are safely effective on all ages. </div>
                     </div>
                 </div>
                 
@@ -769,6 +392,168 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia repudiandae
     </div>
 </section>
 </div>
+
+<div id="shopify-section-product-security-tags" class="shopify-section">
+    <div class="homepage-security-tags-wrapper">
+        <div class="homepage-security-tags">
+            <div class="homepage-security-tags__tags">
+                <div class="homepage-security-tags__list homepage-security-tags__list--first">
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">AFFORDABLE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">ZERO BROKERAGE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO HIDDEN BILLS</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">FREE HOUSEKEEPING</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO SECURITY DEPOSIT</span>
+                    </div>
+                    
+                </div>
+                <div class="homepage-security-tags__list homepage-security-tags__list--second">
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">AFFORDABLE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">ZERO BROKERAGE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO HIDDEN BILLS</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">FREE HOUSEKEEPING</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO SECURITY DEPOSIT</span>
+                    </div>
+                    
+                </div>
+                <div class="homepage-security-tags__list homepage-security-tags__list--second">
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">AFFORDABLE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">ZERO BROKERAGE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO HIDDEN BILLS</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">FREE HOUSEKEEPING</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO SECURITY DEPOSIT</span>
+                    </div>
+                    
+                </div>
+                <div class="homepage-security-tags__list homepage-security-tags__list--second">
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">AFFORDABLE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">ZERO BROKERAGE</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO HIDDEN BILLS</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">FREE HOUSEKEEPING</span>
+                    </div>
+                    
+                    <div class="homepage-security-tags__item">
+                        <svg class="homepage-security-tags__icon" width="20" height="20" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 17.6178 17.6178 22.1538 12 22.1538C6.38221 22.1538 1.84615 17.6178 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM16.8822 7.65865L10.1538 14.387L7.11058 11.351L5.8125 12.649L10.1538 16.9976L18.1947 8.95673L16.8822 7.65865Z"/>
+                        </svg>
+                        <span class="homepage-security-tags__title">NO SECURITY DEPOSIT</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+       
 
 <div id="shopify-section-guarantee" class="shopify-section">
     <div class="global-note">
@@ -858,7 +643,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia repudiandae
                 <div class="footer-info">
                     <img loading="lazy" class="lazyload footer-info__logo"
                         data-src="/static/media/png.png"
-                        alt="Vibrants Footer Logo" />
+                        alt="Footer Logo" />
                     <p class="footer-info__desc">Stadorm</p>
                     <div class="footer-info__social-logos">
                         <a class="footer-info__social-logo" href="https://instagram.com/joinstadorm"
@@ -990,8 +775,101 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia repudiandae
     </div>
 </div>
 </div>
-  </div>
+</div>
+
+  <div class="cookies-banner" id="cookies-banner">
+        <span class="cookies-banner__text">We use cookies to enhance your experience on our website. By using our website, you agree to our privacy policy. <a href="/policies/privacy-policy">Learn more</a></span>
+        <div class="cookies-banner__buttons">
+                <button class="cookies-banner__allow button">I ACCEPT</button>
+        </div>
+</div>
   <script src="/static/js/main.js" defer></script>
+
   
+  <!-- Subscriptions Powered by ReCharge Payments: Begin Liquid Code -->
+<!--
+	Subscription Theme Footer
+	http://rechargepayments.com: v2
+	Updated: 2017/09/12
+-->
+
+	<script>
+		// Subscriptions Powered by ReCharge Payments: JavaScript
+		(function() {
+			// Basic function to load script files, will be used to include jQuery
+			var loadScript = function(url, callback) {
+				var script = document.createElement("script");
+				script.type = "text/javascript";
+				// If the browser is Internet Explorer
+				if (script.readyState){
+					script.onreadystatechange = function() {
+						if (script.readyState == "loaded" || script.readyState == "complete") {
+							script.onreadystatechange = null;
+							callback();
+						}
+					};
+				// For any other browser
+				} else {
+					script.onload = function() {
+						callback();
+					};
+				}
+				script.src = url;
+				document.getElementsByTagName("head")[0].appendChild(script);
+			};
+			// This is our JavaScript that we'll run after jQuery is included
+			var reChargeThemeFooterJS = function($) {
+				function reChargeSaveCartNoteAndRedirectToCart() {
+					var has_cart_note_or_attribute = false;
+					try {
+						var data = {};
+						if ($('[name="note"]').val() != undefined) {
+							var note = $('[name="note"]').val();
+							data['note'] = note;
+							has_cart_note_or_attribute = true;
+						}
+						if (has_cart_note_or_attribute) {
+							$.ajax({
+								type: 'POST',
+								data: data,
+								url: '/cart/update.js',
+								dataType: 'json',
+								success: function() {
+									window.location.href = '/cart';
+								}
+							});
+						} else {
+							window.location.href = '/cart';
+						}
+					} catch (e) {
+						window.location.href = '/cart';
+					}
+				}
+				var checkout_button_selectors = '[href="/checkout"], form[action="/cart"] button[type="submit"], form[action="/cart"] input[type="submit"], form[action="/checkout"] input[type="submit"], form[action="/checkout"] button[type="submit"]';
+				$(document).on('click', checkout_button_selectors, function(e) {
+					if (!e.target.hasAttribute('data-disable-recharge')) {
+						e.preventDefault();
+						reChargeSaveCartNoteAndRedirectToCart();
+						window.location.href = '/cart';
+					} else {
+						console.info('ReCharge disabled');
+					}
+				});
+			}
+			// Check if jQuery is added, if not, then we'll loadScript, otherwise, run reChargeJS
+			if ((typeof(jQuery) == 'undefined') || (parseInt(jQuery.fn.jquery) == 1 && parseFloat(jQuery.fn.jquery.replace(/^1\./,"")) < 7.2)) {
+				// We'll get our jQuery from Google APIs
+				loadScript('//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', function() {
+					jQuery172 = jQuery.noConflict(true);
+					reChargeThemeFooterJS(jQuery172);
+				});
+			} else {
+				reChargeThemeFooterJS(jQuery);
+			}
+		})();
+	</script>
+
+<!-- Subscriptions Powered by ReCharge Payments: End Liquid Code -->
+
 </body>
 </html>
