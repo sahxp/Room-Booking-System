@@ -565,51 +565,7 @@
                 </div>
 
             </div>
-            <div id="shopify-section-161448704533ff3af1" class="shopify-section">
-                <div class="homepage-story">
-                    <div class="homepage-story__container">
-                        <div class="homepage-story__image-wrapper">
-                            <picture>
-                                <source
-                                    data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Big-Pharma-_home_c1897a4b-0176-4417-95a6-8004e73532ec_2560x.gif?v=1623319577 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Big-Pharma-_home_c1897a4b-0176-4417-95a6-8004e73532ec_2560x.gif?v=1623319577 2x"
-                                    media="(min-width: 1440px)">
-                                <source
-                                    data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Big-Pharma-_home_b1165fdb-1854-4e4c-986d-77a33d5e1435_960x.gif?v=1623319631 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Big-Pharma-_home_b1165fdb-1854-4e4c-986d-77a33d5e1435_1920x.gif?v=1623319631 2x"
-                                    media="(min-width: 992px)">
-                                <source
-                                    data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Big-Pharma-_home_e832a750-f34d-47b5-b437-52ebcf725c5d_720x.gif?v=1623319679 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Big-Pharma-_home_e832a750-f34d-47b5-b437-52ebcf725c5d_1440x.gif?v=1623319679 2x"
-                                    media="(min-width: 768px)">
-                                <source
-                                    data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Big-Pharma-_home_---mobile_62606573-4677-432c-8d26-db64141cedbf_320x.gif?v=1623319727 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Big-Pharma-_home_---mobile_62606573-4677-432c-8d26-db64141cedbf_720x.gif?v=1623319727 2x">
-                                <img loading="lazy" class="lazyload homepage-story__image" aria-hidden="true"
-                                    alt="How Patches Work"
-                                    data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Big-Pharma-_home_---mobile_62606573-4677-432c-8d26-db64141cedbf_720x.gif?v=1623319727">
-                            </picture>
-                        </div>
-                        <div class="homepage-story__grid">
-                            <div class="homepage-story__grid-item">
-                                <div class="homepage-story__titles">
-                                    <div class="homepage-science__caption">Our Mission</div>
-                                    <h2 class="homepage-story__title">To share the joy of feeling better.</h2>
-                                    <p class="homepage-story__subtitle">When you feel your best, you radiate pure and
-                                        infinite positivity into the world around you, giving you the power to set off a
-                                        chain reaction of good vibes. We want to keep the love flowing by helping you
-                                        restore your
-                                        balance with nature, achieve optimal wellness and live your most vibrant life.
-                                    </p>
-                                    <div class="homepage-story__buttons">
-                                        <a data-scroll-to-products
-                                            class="homepage-story__button button button--invert">Try Vibrants</a>
-                                        <a class="homepage-story__link" href="/pages/mission">About US</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="homepage-story__grid-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <div id="shopify-section-1614476589a538d23d" class="shopify-section">
                 <div class="global-reviews__grid-wrapper">
                     <div class="global-reviews__grid">
@@ -697,10 +653,30 @@
                                                 fill="url(#rainbow)" />
                                         </svg>
                                     </div>
-                                    <h2 data-scroll class="homepage-trust__title">Refer & Earn</h2>
+                                    
+                                    <h2 data-scroll class="homepage-trust__title">Refer Stadorm</h2>
                                     <p data-scroll class="homepage-trust__subtitle">Hey! If you have already found a place for yourself, can you refer Stadorm to your friends who need space?</p>
                                     <a data-scroll data-scroll-to-products
-                                        class="homepage-trust__button button button--invert">Invite Friends</a>
+                                        class="homepage-trust__button button button--invert share-button">Invite Friends</a>
+                                        <script>
+                                            const shareButton = document.querySelector('.share-button');
+                                        const shareDialog = document.querySelector('.share-dialog');
+                                        const closeButton = document.querySelector('.close-button');
+                                        
+                                        shareButton.addEventListener('click', event => {
+                                          if (navigator.share) { 
+                                           navigator.share({
+                                              title: 'Refer Stadorm',
+                                              url: 'https://Stadorm.com/'
+                                            }).then(() => {
+                                              console.log('Thanks for sharing!');
+                                            })
+                                            .catch(console.error);
+                                            } else {
+                                                shareDialog.classList.add('is-open');
+                                            }
+                                        });
+                                          </script>
                                 </div>
                             </div>
                         </div>
