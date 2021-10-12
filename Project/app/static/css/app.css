@@ -3920,32 +3920,8 @@ screen and (min-width:768px) {
 }
 
 .product-benefits-icons {
-  padding: 5rem 2rem;
+  padding: 2rem;
   box-sizing: border-box
-}
-
-@media (min-width:768px) {
-  .product-benefits-icons {
-    padding: 0 2rem 5rem
-  }
-}
-
-@media (min-width:991px) {
-  .product-benefits-icons {
-    padding: 0 2rem 6rem
-  }
-}
-
-@media (min-width:1280px) {
-  .product-benefits-icons {
-    padding: 0 2rem 8rem
-  }
-}
-
-@media (min-width:1440px) {
-  .product-benefits-icons {
-    padding: 0 2rem 8rem
-  }
 }
 
 .product-benefits-icons__grid {
@@ -11075,7 +11051,7 @@ screen and (min-width:768px) {
   letter-spacing: .13em;
   text-transform: uppercase;
   color: #262626;
-  text-align: left;
+  text-align: center;
   margin: 0 0 1rem
 }
 
@@ -11102,9 +11078,8 @@ screen and (min-width:768px) {
   line-height: 125%;
   font-weight: 700;
   line-height: 140% !important;
-  text-align: left;
+  text-align: center;
   color: #262626;
-  margin: 0 0 1rem;
   max-width: 300px
 }
 
@@ -11178,7 +11153,6 @@ screen and (min-width:768px) {
   .product-how__title {
     max-width: 980px;
     line-height: 100% !important;
-    margin: 0 0 1.5rem
   }
 }
 
@@ -11186,10 +11160,9 @@ screen and (min-width:768px) {
   font-weight: 500;
   font-size: .875rem;
   line-height: 180%;
-  text-align: left;
+  text-align: center;
   color: #262626;
   max-width: 100%;
-  margin: 0 0 1.5rem
 }
 
 @media (min-width:768px) {
@@ -11222,14 +11195,10 @@ screen and (min-width:768px) {
   }
 }
 
-.product-how__subtitle p {
-  margin: 0 0 1rem
-}
 
 @media (min-width:768px) {
   .product-how__subtitle {
     max-width: 300px;
-    margin: 0
   }
 }
 
