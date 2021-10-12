@@ -8557,16 +8557,8 @@ screen and (min-width:768px) {
 }
 
 .homepage-doctor-trust__icon {
-  margin: 0 0 1.125rem;
-  height: 48px;
-  width: 48px
-}
-
-@media (min-width:991px) {
-  .homepage-doctor-trust__icon {
-    height: 64px;
-    width: 64px
-  }
+  height: auto;
+  width: 200px;
 }
 
 .homepage-doctor-trust__caption {
