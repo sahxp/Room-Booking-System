@@ -94,3 +94,6 @@ def checkout(request,userId,username,productId):
 
 def subscription(request,userId, username):
     return render(request,'subscription.html')
+
+def confirmation(request,userId,username,productId):
+    return render(request,'confirmation.html')
