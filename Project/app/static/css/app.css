@@ -19769,6 +19769,16 @@ screen and (min-width:768px) {
   .div8 { grid-area: 4 / 2 / 5 / 3; }
   .div9 { grid-area: 5 / 1 / 6 / 2; }
   .div10 { grid-area: 5 / 2 / 6 / 3; }
-  .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9 {
+  .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10 {
     padding: 0.8rem 0 0.8rem 0;
   }
+  .location {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 0);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div11 { grid-area: 1 / 1; }
+    .div12 { grid-area: 2 / 1; }
