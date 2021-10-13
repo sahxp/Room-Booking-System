@@ -313,50 +313,14 @@
                                     <p class="homepage-products-card__desc">{{i.6}}</p>
                                 </div>
                                 <div data-product-variant-id="38122287202478" data-product-add-to-cart
-                                    class="homepage-products-card__button button button--invert">₹{{i.0.4}} <span>|</span>
+                                    class="homepage-products-card__button button button--invert">₹{{i.4}} <span>|</span>
                                     DETAILS</div>
                             </a>
                         {% endfor %}
+                        <!--
                            <a href="/details/{{userId}}/{{username}}/1" class="homepage-products-card">
                                 <div class="homepage-products-card__image">
-                                    <!--<img class="lazyload"
-            loading="lazy"
-            src="//cdn.shopify.com/s/files/1/0535/7273/1054/products/CD-3_720x.gif?v=1623320068"
-            data-src=""
-            data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
-            data-aspectratio="2"
-            data-sizes="auto"
-            alt="">-->
-                                    <picture>
-                                        <source
-                                            data-srcset="/static/media/room2.jpeg 1x, /static/media/room2.jpeg 2x"
-                                            media="(min-width: 768px)">
-                                        <source
-                                            data-srcset="/static/media/room2.jpeg 1x, /static/media/room2.jpeg 2x">
-                                        <img class="lazyload" loading="lazy" aria-hidden="true"
-                                            data-src="/static/media/room2.jpeg"
-                                            alt="Stadorm A002">
-                                    </picture>
-                                </div>
-                                <div class="homepage-products-card__body">
-                                    <h2 class="homepage-products-card__title">Stadorm A002</h2>
-                                    <p class="homepage-products-card__desc">Ravet, Pune</p>
-                                </div>
-                                <div data-product-variant-id="38122290380974" data-product-add-to-cart
-                                    class="homepage-products-card__button button button--invert">₹3,999 <span>|</span>
-                                    DETAILS</div>
-                            </a>
-
-                            <a href="/details/{{userId}}/{{username}}/1" class="homepage-products-card">
-                                <div class="homepage-products-card__image">
-                                    <!--<img class="lazyload"
-            loading="lazy"
-            src="//cdn.shopify.com/s/files/1/0535/7273/1054/products/RP---3_720x.gif?v=1623320315"
-            data-src=""
-            data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
-            data-aspectratio="2"
-            data-sizes="auto"
-            alt="">-->
+                                   
                                     <picture>
                                         <source
                                             data-srcset="/static/media/room3.jpg 1x, /static/media/room3.jpg 2x"
@@ -377,45 +341,41 @@
                                     DETAILS</div>
                             </a>
 
+                        
+                        
+                        -->
                         </div>
                     </div>
                     <div class="glide homepage-products-slider" id="homepage-products-slider">
                         <div class="glide__track" data-glide-el="track">
                             <div class="glide__slides homepage-products-slider__slides">
-
-                                <a href="/details/{{userId}}/{{username}}/1" class="homepage-products-card">
+                            {% for i in a %}
+                                <a href="/details/{{userId}}/{{username}}/{{i.0}}" class="homepage-products-card">
                                     <div class="homepage-products-card__image">
                                         
                                         <picture>
                                             <source
-                                                data-srcset="/static/media/room1.jpg 1x, /static/media/room1.jpg 2x"
+                                                data-srcset="{{i.8}} 1x, {{i.8}} 2x"
                                                 media="(min-width: 768px)">
                                             <source
-                                                data-srcset="/static/media/room1.jpg 1x, /static/media/room1.jpg 2x">
+                                                data-srcset="{{i.8}} 1x, {{i.8}} 2x">
                                             <img class="lazyload" loading="lazy" aria-hidden="true"
-                                                data-src="/static/media/room1.jpg"
-                                                alt="Stadorm A001">
+                                                data-src="{{i.8}}"
+                                                alt="{{i.1}}">
                                         </picture>
                                     </div>
                                     <div class="homepage-products-card__body">
-                                        <h2 class="homepage-products-card__title">Stadorm A001</h2>
-                                        <p class="homepage-products-card__desc">Akurdi, Pune</p>
+                                        <h2 class="homepage-products-card__title">{{i.1}}</h2>
+                                        <p class="homepage-products-card__desc">{{i.6}}</p>
                                     </div>
                                     <div data-product-variant-id="38122287202478" data-product-add-to-cart
-                                        class="homepage-products-card__button button button--invert">₹3,999
+                                        class="homepage-products-card__button button button--invert">₹{{i.4}}
                                         <span>|</span> DETAILS</div>
                                 </a>
-
+                            {% endfor %}
+                            <!--    
                                 <a href="/details/{{userId}}/{{username}}/1" class="homepage-products-card">
                                     <div class="homepage-products-card__image">
-                                        <!--<img class="lazyload"
-            loading="lazy"
-            src="//cdn.shopify.com/s/files/1/0535/7273/1054/products/CD-3_720x.gif?v=1623320068"
-            data-src=""
-            data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
-            data-aspectratio="2"
-            data-sizes="auto"
-            alt="">-->
                                         <picture>
                                             <source
                                                 data-srcset="/static/media/room2.jpeg 2x"
@@ -438,14 +398,6 @@
 
                                 <a href="/products/relieve-pain" class="homepage-products-card">
                                     <div class="homepage-products-card__image">
-                                        <!--<img class="lazyload"
-            loading="lazy"
-            src="//cdn.shopify.com/s/files/1/0535/7273/1054/products/RP---3_720x.gif?v=1623320315"
-            data-src=""
-            data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
-            data-aspectratio="2"
-            data-sizes="auto"
-            alt="">-->
                                         <picture>
                                             <source
                                                 data-srcset="/static/media/room3.jpg 2x"
@@ -465,7 +417,7 @@
                                         class="homepage-products-card__button button button--invert">₹3,999
                                         <span>|</span> DETAILS</div>
                                 </a>
-
+                            -->
                             </div>
                         </div>
                     </div>
