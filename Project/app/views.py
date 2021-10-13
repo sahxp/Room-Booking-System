@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 import mysql.connector
+import json
 import pyautogui as pag
 
 # Create your views here.
@@ -78,8 +79,21 @@ def signup(request):
     return render(request,'signup.html')
     
 def home(request,userId, username):
+    db = mysql.connector.connect(
+                host='bkswbs4odw5c3n23xb77-mysql.services.clever-cloud.com',
+                username='ucvuplrivukdot0v',
+                password='2yEAa5V6jv16Bm1d6sq7',
+                database='bkswbs4odw5c3n23xb77'
+            )
+    cur = db.cursor()
+    sql = "SELECT * FROM Product WHERE type = 'r';"
+    cur.execute(sql)
+    a = cur.fetchall()
+    a = list([list(i) for i in a])
+    for i in range(len(a)):    
+        a[i].append(json.loads(a[i][5])[0])
 
-    return render(request,'index.html',context={'userId':userId,'username':username})
+    return render(request,'index.html',context={'userId':userId,'username':username,'a':a})
 
 def rooms(request,userId, username):
     return render(request,'rooms.html',context={'userId':userId,'username':username})

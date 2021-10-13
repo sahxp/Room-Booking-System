@@ -293,31 +293,31 @@
                             <h2 class="homepage-products__title">Pune, IN</h2>
                         </div>
                         <div class="homepage-products__cards">
-
-                            <a href="/details/{{userId}}/{{username}}/1" class="homepage-products-card">
+                        {% for i in a %}
+                            <a href="/details/{{userId}}/{{username}}/{{i.0}}" class="homepage-products-card">
                                 <div class="homepage-products-card__image">
                                    
                                     <picture>
                                         <source
-                                            data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969363.jpg?k=adc921a217c20b1414e2f0879ebfe44d7dbd2eb8811b56ba08b288274233b8f5&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969363.jpg?k=adc921a217c20b1414e2f0879ebfe44d7dbd2eb8811b56ba08b288274233b8f5&o=&hp=1 2x"
+                                            data-srcset="{{i.8}} 1x,  2x"
                                             media="(min-width: 768px)">
                                         <source
-                                            data-srcset="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969363.jpg?k=adc921a217c20b1414e2f0879ebfe44d7dbd2eb8811b56ba08b288274233b8f5&o=&hp=1 1x, https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969363.jpg?k=adc921a217c20b1414e2f0879ebfe44d7dbd2eb8811b56ba08b288274233b8f5&o=&hp=1 2x">
+                                            data-srcset="{{i.8}} 1x, {{i.8}} 2x">
                                         <img class="lazyload" loading="lazy" aria-hidden="true"
-                                            data-src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270969363.jpg?k=adc921a217c20b1414e2f0879ebfe44d7dbd2eb8811b56ba08b288274233b8f5&o=&hp=1"
-                                            alt="Stadorm A001">
+                                            data-src="{{i.8}}"
+                                            alt={{i.1}}>
                                     </picture>
                                 </div>
                                 <div class="homepage-products-card__body">
-                                    <h2 class="homepage-products-card__title">Stadorm A001</h2>
-                                    <p class="homepage-products-card__desc">Akurdi, Pune</p>
+                                    <h2 class="homepage-products-card__title">{{i.1}}</h2>
+                                    <p class="homepage-products-card__desc">{{i.6}}</p>
                                 </div>
                                 <div data-product-variant-id="38122287202478" data-product-add-to-cart
-                                    class="homepage-products-card__button button button--invert">₹3,999 <span>|</span>
+                                    class="homepage-products-card__button button button--invert">₹{{i.0.4}} <span>|</span>
                                     DETAILS</div>
                             </a>
-
-                            <a href="/details/{{userId}}/{{username}}/1" class="homepage-products-card">
+                        {% endfor %}
+                           <a href="/details/{{userId}}/{{username}}/1" class="homepage-products-card">
                                 <div class="homepage-products-card__image">
                                     <!--<img class="lazyload"
             loading="lazy"
