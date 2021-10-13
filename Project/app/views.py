@@ -14,14 +14,14 @@ def login(request):
             return render(request,'login.html')
         else:
             db = mysql.connector.connect(
-                    host='sql6.freemysqlhosting.net',
-                    username='sql6443052',
-                    password='8yCMcmme2d',
-                    database='sql6443052'
+                    host='bkswbs4odw5c3n23xb77-mysql.services.clever-cloud.com',
+                    username='ucvuplrivukdot0v',
+                    password='2yEAa5V6jv16Bm1d6sq7',
+                    database='bkswbs4odw5c3n23xb77'
                 ) 
             cur = db.cursor()
 
-            sql = "SELECT * FROM sql6443052.User WHERE email = '"+email+"';"
+            sql = "SELECT * FROM User WHERE email = '"+email+"';"
 
             cur.execute(sql)
 
@@ -55,15 +55,15 @@ def signup(request):
             return render(request,'signup.html')
         else:
             db = mysql.connector.connect(
-                    host='sql6.freemysqlhosting.net',
-                    username='sql6443052',
-                    password='8yCMcmme2d',
-                    database='sql6443052'
+                    host='bkswbs4odw5c3n23xb77-mysql.services.clever-cloud.com',
+                    username='ucvuplrivukdot0v',
+                    password='2yEAa5V6jv16Bm1d6sq7',
+                    database='bkswbs4odw5c3n23xb77'
                 ) 
 
             cur = db.cursor()
 
-            sql = "INSERT INTO sql6443052.User (fname, lname, email, password, username) VALUE ('"+fname+"','"+lname+"','"+email+"','"+password+"','"+username+"');"
+            sql = "INSERT INTO User (fname, lname, email, password, username) VALUE ('"+fname+"','"+lname+"','"+email+"','"+password+"','"+username+"');"
 
             try:
                 cur.execute(sql)
