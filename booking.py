@@ -1,4 +1,5 @@
 import mysql.connector
+import json
 
 def add_user(fname,lname,email,password,username):
     db = mysql.connector.connect(
@@ -11,9 +12,13 @@ def add_user(fname,lname,email,password,username):
     cur = db.cursor()
 
     # sql = "INSERT INTO sql6443052.User (fname, lname, email, password, username) VALUE ('"+fname+"','"+lname+"','"+email+"','"+password+"','"+username+"');"
-    sql = "SELECT * FROM User where email='test@test.com';"
+    # sql = "SELECT * FROM User where email='test@test.com';"
+    sql = "SELECT * FROM Product WHERE type = 'r';"
     cur.execute(sql)
     a = cur.fetchall()
+    a = [list(i) for i in a]
+    for i in range(len(a)):    
+        a[i].append(json.loads(a[i][5])[0])
     print(a)
     db.commit()
 
