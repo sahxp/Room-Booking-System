@@ -8426,7 +8426,7 @@ screen and (min-width:768px) {
 
 @media (min-width:768px) {
   .homepage-doctor__grid {
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -moz-column-gap: .9375rem;
     column-gap: .9375rem;
     max-width: 1660px;
@@ -19791,4 +19791,10 @@ screen and (min-width:768px) {
   .print-container, .print-container * {
     visibility: visible;
   }
+}
+.food-card {
+  margin: 1rem;
+}
+.food-title {
+  text-align: center;
 }
