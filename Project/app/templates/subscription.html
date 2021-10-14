@@ -1,14 +1,9 @@
 {% load static %}
 
-
 <!doctype html>
 <html lang="en">
-
 <head>
     <title>Stadorm - Community Living Experience</title>
-
-
-
     <meta property="og:site_name" content="Stadorm">
     <meta property="og:url" content="https://stadorm.com/">
     <meta property="og:title" content="Stadorm - Community Living Experience">
@@ -29,488 +24,337 @@
         href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css " />
     <link rel="stylesheet "
         href="{%  static  '/css/app.css'  %}">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-361370544 "></script>
     
 </head>
 
 <body>
     
-        <!--ajax cart overlay-->
-        <div class="ajax-cart__overlay js-ajax-cart-overlay"></div>
-        <!--end ajax cart overlay-->
     
-  <div id="shopify-section-header" class="shopify-section"><header class="header">
-    
-    <nav class="navbar">
-    <div class="navbar__container">
-        <div class="navbar__start">
-                <div class="navbar__item navbar__item--icons is-hidden-desktop">
-                    <div class="navbar-burger-menu__icon js-navbar-burger-trigger">
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
-                </div>
-                <div class="navbar__menu"><a class="navbar__item " href="/collections/all" alt="Shop">Shop</a><a class="navbar__item " href="/pages/patch" alt="Our Patch">Our Patch</a><a class="navbar__item " href="/pages/mission" alt="About Us">About Us</a></div>
-            </div>
-            <div class="navbar__brand">
-                
-<a class="navbar__logo" href="/">
-    <img src="/static/media/png.png" alt="Vibrants"/>
-</a>
+    <div id="shopify-section-header" class="shopify-section">
+        <header class="header">
 
-            </div>
-            <div class="navbar__end">
-                <a class='navbar__item is-hidden-mobile' href="/pages/subscribe">Subscription</a>
-                
-                
-                <a class='navbar__item is-hidden-mobile' href="/account/login">Sign in</a>
-                
-                
-                <div class='navbar__item navbar__item--icons'>
-                <div class='cart-icon' data-cart-toggle>
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="#262626" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C8.70356 0 6.00079 2.49519 6.00079 5.53846H2.00131C1.47013 5.53846 1.03269 5.92067 1.00144 6.41106L0.0015715 23.0264C-0.0140505 23.2788 0.0874982 23.5312 0.274974 23.7115C0.462449 23.899 0.728038 24 1.00144 24H22.9986C23.272 24 23.5376 23.899 23.725 23.7115C23.9125 23.5312 24.0141 23.2788 23.9984 23.0264L22.9986 6.41106C22.9673 5.92067 22.5299 5.53846 21.9987 5.53846H17.9992C17.9992 2.49519 15.2964 0 12 0ZM12 1.84615C14.2028 1.84615 15.9995 3.50481 15.9995 5.53846H8.00052C8.00052 3.50481 9.79716 1.84615 12 1.84615ZM2.9465 7.38462H6.00079V11.0769H8.00052V7.38462H15.9995V11.0769H17.9992V7.38462H21.0535L21.9362 22.1538H2.0638L2.9465 7.38462Z"/>
-    </svg>
-    <div class='cart-icon__dot'>
-        <span class="cart-icon__text" data-cart-counter></span>
-    </div>
-</div>
-                </div>
-            </div>
-    </div>
-</nav>
-<div class="navbar-burger-menu">
-    <div class="navbar-burger-menu__content">
-        <div class="account-banner">
-    <a href="/account/login" class="account-banner__signin ">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="#6671c2" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 0C5.38702 0 0 5.38702 0 12C0 18.613 5.38702 24 12 24C18.613 24 24 18.613 24 12C24 5.38702 18.613 0 12 0ZM12 1.84615C17.6178 1.84615 22.1538 6.38221 22.1538 12C22.1538 14.4736 21.274 16.7308 19.8173 18.4904C19.024 16.2404 17.3077 14.4303 15.1154 13.5361C16.0313 12.6923 16.6154 11.488 16.6154 10.1538C16.6154 7.61538 14.5385 5.53846 12 5.53846C9.46154 5.53846 7.38462 7.61538 7.38462 10.1538C7.38462 11.488 7.96875 12.6923 8.88462 13.5361C6.69231 14.4303 4.98317 16.2404 4.1899 18.4904C2.72596 16.7308 1.84615 14.4736 1.84615 12C1.84615 6.38221 6.38221 1.84615 12 1.84615ZM12 7.38462C13.5433 7.38462 14.7692 8.61058 14.7692 10.1538C14.7692 11.6971 13.5433 12.9231 12 12.9231C10.4567 12.9231 9.23077 11.6971 9.23077 10.1538C9.23077 8.61058 10.4567 7.38462 12 7.38462ZM12 14.7692C15.137 14.7692 17.7115 16.9976 18.3101 19.9543C16.5721 21.3317 14.387 22.1538 12 22.1538C9.61298 22.1538 7.42789 21.3317 5.69712 19.9543C6.28846 16.9976 8.86298 14.7692 12 14.7692Z"/>
-        </svg>
-        <span>
-            
-                Sign In
-            
-        </span>
-    </a>
-    <a href="/account/register" class="account-banner__register ">Create Account</a>
-</div>
-
-        <div class="navbar-burger-divider"></div>
-        <div class="navbar-burger-menu__container">
-            <div class="navbar-burger-list"><a class="navbar-burger-list__item" href="/collections/all" alt="Shop All">Shop All</a>
-                
-                    <div class="navbar-burger-divider"></div>
-                
-<a class="navbar-burger-list__item" href="/pages/patch" alt="Our Patch">Our Patch</a>
-                
-                    <div class="navbar-burger-divider"></div>
-                
-<a class="navbar-burger-list__item" href="/pages/mission" alt="About Us">About Us</a>
-                
-                    <div class="navbar-burger-divider"></div>
-                
-<a class="navbar-burger-list__item" href="/pages/subscribe" alt="Subscribe">Subscribe</a>
-                
-<div class="navbar-burger-divider"></div>
-                <!--<a href="/collections/all" class="navbar-burger-list__item">Shop All</a>
-                <a href="/pages/patch" class="navbar-burger-list__item">Patch</a>
-                <div class="navbar-burger-divider"></div>
-                <a href="/pages/mission" class="navbar-burger-list__item">Mission</a>
-                <div class="navbar-burger-divider"></div>
-                <a href="/pages/subscribe" class="navbar-burger-list__item">Subscribe</a>
-                <div class="navbar-burger-divider"></div>-->
-            </div>
-        </div>
-    </div>
-</div>
-</header>
-</div>
-  <div data-scroll-container>
-    <main class="main" role="main">
-        <div id="shopify-section-subscribe-hero" class="shopify-section"><div class="subscribe-hero-wrapper">
-    <div class="subscribe-hero">
-        <div class="subscribe-hero__container">
-                <picture class="subscribe-hero__image">
-                    <source class="subscribe-hero__image" srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-header---large_44e2e9ee-045b-460f-b357-0bac9e9c9b50_2560x.gif?v=1623321174 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-header---large_44e2e9ee-045b-460f-b357-0bac9e9c9b50_2560x.gif?v=1623321174 2x" media="(min-width: 1440px)">
-                    <source class="subscribe-hero__image" srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-header---laptop_cad78a76-7114-45b9-a703-71d962038eb2_960x.gif?v=1623321196 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-header---laptop_cad78a76-7114-45b9-a703-71d962038eb2_1920x.gif?v=1623321196 2x" media="(min-width: 992px)">
-                    <source class="subscribe-hero__image" srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-header---tablet_d3cbaf28-2d9a-4981-a00a-c426cc8361b3_720x.gif?v=1623321206 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-header---tablet_d3cbaf28-2d9a-4981-a00a-c426cc8361b3_1440x.gif?v=1623321206 2x" media="(min-width: 768px)">
-                    <source class="subscribe-hero__image" srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-header---mobile_7e33ba34-adb3-4d95-b7fd-4007a96f9e35_320x.gif?v=1623321217 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-header---mobile_7e33ba34-adb3-4d95-b7fd-4007a96f9e35_720x.gif?v=1623321217 2x">
-                    <img class="subscribe-hero__image" aria-hidden="true" alt="" src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-header---mobile_7e33ba34-adb3-4d95-b7fd-4007a96f9e35_720x.gif?v=1623321217">
-                </picture>
-            <div class="subscribe-hero__body">
-                <div class="subscribe-hero__titles">
-                    <div class="subscribe-hero__caption">MONTHLY SUBSCRIPTION</div>
-                    <h1 class="subscribe-hero__title">Keep the good vibes coming.</h1>
-                    <p class="subscribe-hero__subtitle">Make a commitment to feeling naturally healthy and we’ll knock off 15% on all orders.</p>
-                    <a class="subscribe-hero__button button" href="/collections/all">Try Vibrants</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div id="shopify-section-subscribe-benefits" class="shopify-section"><div class="subscribe-benefits">
-    <div class="subscribe-benefits__container">
-            <div class="subscribe-benefits__items">
-                
-                <div class="subscribe-benefits__item">
-                    <img class="subscribe-benefits__icon lazyload" height="40px"
-                        src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/icon-1.jpg?v=1621979675" alt="" />
-                    <div class="subscribe-benefits__head">
-                        <h2 class="subscribe-benefits__title">Flexible Schedule</h2>
-                        <p class="subscribe-benefits__subtitle">Change the delivery date of your subscription at any time.</p>
-                    </div>
-                </div>
-                
-                <div class="subscribe-benefits__item">
-                    <img class="subscribe-benefits__icon lazyload" height="40px"
-                        src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/icon-2.jpg?v=1621979696" alt="" />
-                    <div class="subscribe-benefits__head">
-                        <h2 class="subscribe-benefits__title">Save More</h2>
-                        <p class="subscribe-benefits__subtitle">A monthly subscription cuts the price of your order by 15%.</p>
-                    </div>
-                </div>
-                
-                <div class="subscribe-benefits__item">
-                    <img class="subscribe-benefits__icon lazyload" height="40px"
-                        src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/icon-3.jpg?v=1621979715" alt="" />
-                    <div class="subscribe-benefits__head">
-                        <h2 class="subscribe-benefits__title">Easy Management</h2>
-                        <p class="subscribe-benefits__subtitle">Pause or swap products at any time through your account.</p>
-                    </div>
-                </div>
-                
-            </div>
-    </div>
-</div>
-</div>
-<div id="shopify-section-subscribe-how" class="shopify-section"><section class="subscribe-how">
-    <div class="subscribe-how__container">
-        <picture>
-            <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-how---large_fb4fb2d3-ca6e-4b02-a516-22c5956581f9_2560x.gif?v=1623321368 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-how---large_fb4fb2d3-ca6e-4b02-a516-22c5956581f9_2560x.gif?v=1623321368 2x" media="(min-width: 1440px)">
-            <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-how-v2---laptop_1f0eb59a-9025-49e2-ac65-3fc361468d83_960x.gif?v=1623321379 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-how-v2---laptop_1f0eb59a-9025-49e2-ac65-3fc361468d83_1920x.gif?v=1623321379 2x" media="(min-width: 992px)">
-            <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-how-v2---tablet_b19105dd-9a12-4f38-a6f4-1f46b8c6704c_720x.gif?v=1623321421 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-how-v2---tablet_b19105dd-9a12-4f38-a6f4-1f46b8c6704c_1440x.gif?v=1623321421 2x" media="(min-width: 768px)">
-            <source data-srcset="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-how---mobile_4697601c-a88e-4f31-9f7a-3e94879aa89b_320x.gif?v=1623321457 1x, //cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-how---mobile_4697601c-a88e-4f31-9f7a-3e94879aa89b_720x.gif?v=1623321457 2x">
-            <img loading="lazy" class="lazyload subscribe-how__image" aria-hidden="true" alt="How Patches Work" data-src="//cdn.shopify.com/s/files/1/0535/7273/1054/files/Subscription-how---mobile_4697601c-a88e-4f31-9f7a-3e94879aa89b_720x.gif?v=1623321457">
-        </picture>
-        <div class="subscribe-how__content">
-            <div class="subscribe-how__titles">
-                <div class="homepage-science__caption">HOW IT WORKS</div>
-                <h2 class="subscribe-how__title">Simple steps to feeling your best.</h2>
-                <div class="subscribe-how__points">
-                    <div class="subscribe-how__point">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="15" fill="white" stroke="#CCCCCC" stroke-width="2"/>
-                            <path d="M17.5848 11.2V21H15.3168V13.02H13.3568V11.2H17.5848Z" fill="#262626"/>
-                        </svg>
-                        <div class="subscribe-how__point-titles">
-                            <h3 class="subscribe-how__point-title">Pick Your Feelings</h3>
-                            <p class="subscribe-how__point-subtitle">Fill your shopping bag and select the subscribe option during checkout.</p>
+            <nav class="navbar">
+                <div class="navbar__container">
+                    <div class="navbar__start">
+                        <div class="navbar__item navbar__item--icons is-hidden-desktop">
+                            <div class="navbar-burger-menu__icon js-navbar-burger-trigger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
+                        <div class="navbar__menu"><a class="navbar__item " href="/rooms/{{userId}}/{{username}}/" alt="Rooms">Find Rooms</a></div>
                     </div>
-                    <div class="subscribe-how__point">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="15" fill="white" stroke="#CCCCCC" stroke-width="2"/>
-                            <path d="M19.7391 19.152V21H12.3331V19.53L16.1131 15.96C16.5144 15.5773 16.7851 15.2507 16.9251 14.98C17.0651 14.7 17.1351 14.4247 17.1351 14.154C17.1351 13.762 16.9998 13.4633 16.7291 13.258C16.4678 13.0433 16.0804 12.936 15.5671 12.936C15.1378 12.936 14.7504 13.02 14.4051 13.188C14.0598 13.3467 13.7704 13.5893 13.5371 13.916L11.8851 12.852C12.2678 12.2827 12.7951 11.8393 13.4671 11.522C14.1391 11.1953 14.9091 11.032 15.7771 11.032C16.5051 11.032 17.1398 11.1533 17.6811 11.396C18.2318 11.6293 18.6564 11.9653 18.9551 12.404C19.2631 12.8333 19.4171 13.342 19.4171 13.93C19.4171 14.462 19.3051 14.9613 19.0811 15.428C18.8571 15.8947 18.4231 16.4267 17.7791 17.024L15.5251 19.152H19.7391Z" fill="#262626"/>
-                        </svg>
-                        <div class="subscribe-how__point-titles">
-                            <h3 class="subscribe-how__point-title">Choose Your Frequency</h3>
-                            <p class="subscribe-how__point-subtitle">Tell us how often you’d like to recieve your patches and we’ll get it shipped.</p>
-                        </div>
-                    </div>
-                    <div class="subscribe-how__point">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="15" fill="white" stroke="#CCCCCC" stroke-width="2"/>
-                            <path d="M16.9814 15.19C17.8401 15.33 18.4981 15.652 18.9554 16.156C19.4128 16.6507 19.6414 17.2667 19.6414 18.004C19.6414 18.5733 19.4921 19.1007 19.1934 19.586C18.8948 20.062 18.4374 20.4447 17.8214 20.734C17.2148 21.0233 16.4681 21.168 15.5814 21.168C14.8908 21.168 14.2094 21.0793 13.5374 20.902C12.8748 20.7153 12.3101 20.454 11.8434 20.118L12.7254 18.382C13.0988 18.662 13.5281 18.8813 14.0134 19.04C14.5081 19.1893 15.0121 19.264 15.5254 19.264C16.0948 19.264 16.5428 19.1567 16.8694 18.942C17.1961 18.718 17.3594 18.4053 17.3594 18.004C17.3594 17.2013 16.7481 16.8 15.5254 16.8H14.4894V15.302L16.5054 13.02H12.3334V11.2H19.1934V12.67L16.9814 15.19Z" fill="#262626"/>
-                        </svg>
-                        <div class="subscribe-how__point-titles">
-                            <h3 class="subscribe-how__point-title">Manage Your Subscription</h3>
-                            <p class="subscribe-how__point-subtitle">Easily change, pause, or cancel your subscription at anytime. No questions.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                    <div class="navbar__brand">
 
-</div>
-<div id="shopify-section-subscribe-claim" class="shopify-section"><section class="subscribe-claim">
-    <div class="subscribe-claim__container">
-        <p class="subscribe-claim__text">*By subscribing, you agree that your subscription will be renewed and your credit card will be billed for the subscription rate (plus taxes) each selected period until you cancel. You can cancel at any time without penalty by going to “My Account” and following the cancellation instructions under the “My Product Subscriptions” tab. You will not be provided a refund for any amounts charged prior to cancellation. A subscription discount cannot be combined with any other promotion or discount code on vibrants.com.</p>
-    </div>
-</section>
-</div>
-<div id="shopify-section-subscribe-faq" class="shopify-section"><section class="subscribe-faq">
-    <div class="container">
-        <h2 class="subscribe-faq__title">Got Questions?</h2>
-        <div class="subscribe-faq__accordions">
-            <div class="accordion">
-                
-                <div class="accordion-item">
-                    <button id="accordion-button-1" aria-expanded="false">
-                        <span class="icon" aria-hidden="true"></span>
-                        <span class="accordion-title">How do I start a subscription?</span>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-text"><p>When viewing the a product page, click on "Subscribe and Save" and choose your delivery frequency before adding the item to your bag.  The 15% discount will be automatically applied to your purchase and we'll send a confirmation email when your next order is ready to ship. You can change, pause, or cancel your subscription at anytime.</p></div>
-                    </div>
-                </div>
-                
-                <div class="subscribe-faq__divider"></div>
-                
-                
-                <div class="accordion-item">
-                    <button id="accordion-button-2" aria-expanded="false">
-                        <span class="icon" aria-hidden="true"></span>
-                        <span class="accordion-title">How can I track my order?</span>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-text"><p>Once your order has shipped, you'll receive your tracking information via email.  If you haven't received your tracking information and it has been over 2 full business days, please contact us at <a href="mailto:support@vibrants.com">support@vibrants.com</a>.</p></div>
-                    </div>
-                </div>
-                
-                <div class="subscribe-faq__divider"></div>
-                
-                
-                <div class="accordion-item">
-                    <button id="accordion-button-3" aria-expanded="false">
-                        <span class="icon" aria-hidden="true"></span>
-                        <span class="accordion-title">How do I cancel my subscription.</span>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-text"><p>Once you are in the Customer Portal, you will click the <strong>Subscriptions</strong> tab from the left-hand menu. If you no longer want to continue your subscription, click on the <strong>Actions</strong> button found next to the subscription you want to cancel and then select <strong>Cancel</strong> from the dropdown menu.</p></div>
-                    </div>
-                </div>
-                
-                
-            </div>
-        </div>
-    </div>
-</section>
-</div>
-<div id="shopify-section-guarantee" class="shopify-section">
-    <div class="global-note">
-        <div class="global-note__container gradient">
-            <div class="global-note__grid">
-                <div class="global-note__grid-item">
-                    <div>
-                        <div class="global-note__subtitle global-note__subtitle--bold">Schedule a free visit,</div>
-                        <div class="global-note__subtitle"> Book only if you like it,</div>
-                    </div>
-                </div>
-                <div class="global-note__divider"></div>
-                <div class="global-note__grid-item">
-                    <div>
-                        <div class="global-note__title">Community Living Experience</div>
-                    </div>
-                </div>
-                <div class="global-note__divider"></div>
-                <div class="global-note__grid-item">
-                    <div>
-                        <div class="global-note__subtitle global-note__subtitle--bold">3 days cancellation policy,</div>
-                        <div class="global-note__subtitle">No questions asked.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <style>
-        .gradient {
-            background: linear-gradient(45deg, #fff6f1, #eef7ff, #fff2f1, #fff6f1, #eef7ff, #fff2f1);
-            background-size: 600% 600%;
-            -webkit-animation: backgroundfade 12s ease infinite;
-            -moz-animation: backgroundfade 12s ease infinite;
-            animation: backgroundfade 12s ease infinite;
-            animation-direction: alternate;
-        }
-
-        @-webkit-keyframes backgroundfade {
-            0% {
-                background-position: 0% 50%
-            }
-
-            50% {
-                background-position: 100% 50%
-            }
-
-            100% {
-                background-position: 0% 50%
-            }
-        }
-
-        @-moz-keyframes backgroundfade {
-            0% {
-                background-position: 0% 50%
-            }
-
-            50% {
-                background-position: 100% 50%
-            }
-
-            100% {
-                background-position: 0% 50%
-            }
-        }
-
-        @keyframes backgroundfade {
-            0% {
-                background-position: 0% 50%
-            }
-
-            50% {
-                background-position: 100% 50%
-            }
-
-            100% {
-                background-position: 0% 50%
-            }
-        }
-    </style>
-</div>
-</main>
-<div id="shopify-section-footer" class="shopify-section">
-<footer class="footer">
-    <div class="footer__container">
-        <div class="footer__grid">
-            <div class="footer__column footer__column--info">
-                <div class="footer-info">
-                    <img loading="lazy" class="lazyload footer-info__logo"
-                        data-src="/static/media/png.png"
-                        alt="Vibrants Footer Logo" />
-                    <p class="footer-info__desc">Stadorm</p>
-                    <div class="footer-info__social-logos">
-                        <a class="footer-info__social-logo" href="https://instagram.com/joinstadorm"
-                            target="_blank" rel="noopener" aria-label="Instagram">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M4.64423 0C2.08654 0 0 2.08654 0 4.64423V11.3558C0 13.9135 2.08654 16 4.64423 16H11.3558C13.9135 16 16 13.9135 16 11.3558V4.64423C16 2.08654 13.9135 0 11.3558 0H4.64423ZM4.64423 1.23077H11.3558C13.2476 1.23077 14.7692 2.75 14.7692 4.64423V11.3558C14.7692 13.2476 13.25 14.7692 11.3558 14.7692H4.64423C2.7524 14.7692 1.23077 13.25 1.23077 11.3558V4.64423C1.23077 2.7524 2.75 1.23077 4.64423 1.23077ZM12.6154 2.46154C12.1058 2.46154 11.6923 2.875 11.6923 3.38462C11.6923 3.89423 12.1058 4.30769 12.6154 4.30769C13.125 4.30769 13.5385 3.89423 13.5385 3.38462C13.5385 2.875 13.125 2.46154 12.6154 2.46154ZM8 3.69231C5.6274 3.69231 3.69231 5.6274 3.69231 8C3.69231 10.3726 5.6274 12.3077 8 12.3077C10.3726 12.3077 12.3077 10.3726 12.3077 8C12.3077 5.6274 10.3726 3.69231 8 3.69231ZM8 4.92308C9.70673 4.92308 11.0769 6.29327 11.0769 8C11.0769 9.70673 9.70673 11.0769 8 11.0769C6.29327 11.0769 4.92308 9.70673 4.92308 8C4.92308 6.29327 6.29327 4.92308 8 4.92308Z"
-                                    fill="#262626" />
-                            </svg>
+                        <a class="navbar__logo" href="/">
+                            <img src="/static/media/png.png" alt="Stadorm" />
                         </a>
-                        <a class="footer-info__social-logo" href="https://facebook.com/stadorm"
-                            target="_blank" rel="noopener" aria-label="Facebook">
-                            <svg width="8" height="16" viewBox="0 0 8 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8 5.60003H5.32067V4.00004C5.32067 3.17444 5.38451 2.65444 6.50869 2.65444H7.92855V0.11045C7.23762 0.0352499 6.5429 -0.00155 5.84741 4.99998e-05C3.78527 4.99998e-05 2.28029 1.32565 2.28029 3.75924V5.60003H0V8.80002L2.28029 8.79922V16H5.32067V8.79762L7.65112 8.79682L8 5.60003Z"
-                                    fill="#262626" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="footer-info__email">
-                        <p class="footer-info__email-title">Need Help?</p>
-                        <a class="footer-info__email-link"
-                            href="mailto:hello@stadorm.com">hello@stadorm.com</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__column footer__column--nav">
-                <div class="footer__nav">
-                    <div class="footer-menu">
-                        <div class="footer-links">
-                            <div class="footer-links__title">Careers</div>
-                            <a href="#" class="footer-links__item">Full Time Job</a>
-                            <a href="#" class="footer-links__item">Internships</a>
-                            <a href="#" class="footer-links__item">Work From Home</a>
-                        </div>
-                        <div class="footer-links">
-                            <div class="footer-links__title">Company</div>
-                            <a href="#" class="footer-links__item">About Us</a>
-                            <a href="#" class="footer-links__item">Subscribe</a>
-                            <a href="#" class="footer-links__item">Affiliates</a>
-                            <a href="#" class="footer-links__item">FAQ's</a>
-                        </div>
-                    </div>
-                    <div class="footer-accordions">
-                        <div class="footer-accordions__item">
-                            <div class="footer-accordions__tab" aria-expanded="false">
-                                <div class="footer-accordions__tab-title">Careers</div>
-                                <span class="footer-accordions__tab-icon" aria-hidden="true"></span>
-                            </div>
-                            <div class="footer-accordions__content">
-                                <div class="footer-accordions__links"><a href="#"
-                                        class="footer-links__item">Full Time Job</a><a
-                                        href="#" class="footer-links__item">Internships</a><a href="#"
-                                        class="footer-links__item">Work From Home</a></div>
-                            </div>
-                        </div>
-                        <div class="footer-accordions__item">
-                            <div class="footer-accordions__tab" aria-expanded="false">
-                                <div class="footer-accordions__tab-title">Company</div>
-                                <span class="footer-accordions__tab-icon" aria-hidden="true"></span>
-                            </div>
-                            <div class="footer-accordions__content">
-                                <div class="footer-accordions__links"><a href="#"
-                                        class="footer-links__item">About Us</a><a href="/subscription.html"
-                                        class="footer-links__item">Subscribe</a><a href="/careers.html"
-                                        class="footer-links__item">Affiliates</a><a href="faq.html"
-                                        class="footer-links__item">FAQ's</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__column footer__column--newsletter">
 
-                <div class="newsletter">
-                    <div class="newsletter__titles">
-                        <h2 class="newsletter__title">Get 15% off on your booking!</h2>
-                        <p class="newsletter__subtitle">Sign up to our newsletter and get a chance to win
-                            15% off on your booking.</h2>
-                        <div>
-                            <form id="email_signup" class="newsletter-form"
-                                action="#" method="GET"
-                                target="_blank" novalidate="novalidate">
-                                <input type="hidden" name="g" value="RLeEEn">
-                                <input type="hidden" name="$fields" value="email">
-                                <input type="hidden" name="$list_fields" value="web">
-                                <div class="newsletter-form__field">
-                                    <input class="newsletter-form__input" type="email" value="" name="email"
-                                        id="k_id_email" placeholder="Enter Your Email Here" />
-                                    <button type="submit" class="newsletter-form__button">
-                                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none"
+                    </div>
+                    <div class="navbar__end">
+                        <a class='navbar__item is-hidden-mobile' href="/">Home</a>
+
+
+                        <!-- <a class='navbar__item is-hidden-mobile' href="login.html">Sign in</a> -->
+
+
+                        <div class='navbar__item navbar__item--icons'>
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="navbar-burger-menu">
+                <div class="navbar-burger-menu__content">
+
+                    <div class="navbar-burger-divider"></div>
+                    <div class="navbar-burger-menu__container">
+                        <div class="navbar-burger-list"><a class="navbar-burger-list__item" href="rooms"
+                                alt="Rooms">Find Rooms</a>
+                            <div class="navbar-burger-divider"></div>
+
+                            <a class="navbar-burger-list__item" href="/" alt="home">Home</a>
+
+                            <div class="navbar-burger-divider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+        <main class="main" role="main">
+            <!-- BEGIN content_for_index -->
+            
+            <div class="food-card">
+                <div class="collection-page__container">
+                    <h2 style="text-align: center; padding:1rem;">Food Subscription</h2>
+                  <div class="collection-page__products">
+                    <a href="" class="homepage-products-card">
+                        <div class="homepage-products-card__image">
+                            <img class="lazyload" src="https://cdn.dribbble.com/users/730155/screenshots/13820988/media/0490d474a3bd270b5d500a17d642c8ff.png" alt="Product Image">
+                        </div>
+                        <div class="homepage-products-card__body">
+                            <h2 class="homepage-products-card__title">
+                                One
+                            </h2>
+                            <p class="homepage-products-card__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora assumenda quam nobis saepe, dicta expedita voluptatum impedit aut recusandae sed doloremque possimus incidunt animi iste.</p>
+                        </div>
+                        <div data-product-variant-id="38122287202478" data-product-add-to-cart class="homepage-products-card__button button button--invert">₹1,900  <span>|</span>  subscribe</div>
+                    </a>  
+                    <a href="" class="homepage-products-card">
+                        <div class="homepage-products-card__image">
+                            <img class="lazyload" src="https://cdn.dribbble.com/users/730155/screenshots/13820988/media/0490d474a3bd270b5d500a17d642c8ff.png" alt="Product Image">
+                        </div>
+                        <div class="homepage-products-card__body">
+                            <h2 class="homepage-products-card__title">
+                                Two
+                            </h2>
+                            
+                            <p class="homepage-products-card__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora assumenda quam nobis saepe, dicta expedita voluptatum impedit aut recusandae sed doloremque possimus incidunt animi iste.</p>
+                        </div>
+                        <div data-product-variant-id="38122287202478" data-product-add-to-cart class="homepage-products-card__button button button--invert">₹3,500  <span>|</span>  subscribe</div>
+                    </a>
+                    <a href="" class="homepage-products-card">
+                        <div class="homepage-products-card__image">
+                            <img class="lazyload" src="https://cdn.dribbble.com/users/730155/screenshots/13820988/media/0490d474a3bd270b5d500a17d642c8ff.png" alt="Product Image">
+                        </div>
+                        <div class="homepage-products-card__body">
+                            <h2 class="homepage-products-card__title">
+                                Three
+                            </h2>
+                            
+                            <p class="homepage-products-card__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora assumenda quam nobis saepe, dicta expedita voluptatum impedit aut recusandae sed doloremque possimus incidunt animi iste.</p>
+                        </div>
+                        <div data-product-variant-id="38122287202478" data-product-add-to-cart class="homepage-products-card__button button button--invert">₹4,990 <span>|</span>  subscribe</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            
+            <!-- END content_for_index -->
+
+            <div id="shopify-section-guarantee" class="shopify-section">
+                <div class="global-note">
+                    <div class="global-note__container gradient">
+                        <div class="global-note__grid">
+                            <div class="global-note__grid-item">
+                                <div>
+                                    <div class="global-note__subtitle global-note__subtitle--bold">Schedule a free visit,</div>
+                                    <div class="global-note__subtitle"> Book only if you like it,</div>
+                                </div>
+                            </div>
+                            <div class="global-note__divider"></div>
+                            <div class="global-note__grid-item">
+                                <div>
+                                    <div class="global-note__title">Community Living Experience</div>
+                                </div>
+                            </div>
+                            <div class="global-note__divider"></div>
+                            <div class="global-note__grid-item">
+                                <div>
+                                    <div class="global-note__subtitle global-note__subtitle--bold">3 days cancellation policy,</div>
+                                    <div class="global-note__subtitle">No questions asked.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .gradient {
+                        background: linear-gradient(45deg, #fff6f1, #eef7ff, #fff2f1, #fff6f1, #eef7ff, #fff2f1);
+                        background-size: 600% 600%;
+                        -webkit-animation: backgroundfade 12s ease infinite;
+                        -moz-animation: backgroundfade 12s ease infinite;
+                        animation: backgroundfade 12s ease infinite;
+                        animation-direction: alternate;
+                    }
+            
+                    @-webkit-keyframes backgroundfade {
+                        0% {
+                            background-position: 0% 50%
+                        }
+            
+                        50% {
+                            background-position: 100% 50%
+                        }
+            
+                        100% {
+                            background-position: 0% 50%
+                        }
+                    }
+            
+                    @-moz-keyframes backgroundfade {
+                        0% {
+                            background-position: 0% 50%
+                        }
+            
+                        50% {
+                            background-position: 100% 50%
+                        }
+            
+                        100% {
+                            background-position: 0% 50%
+                        }
+                    }
+            
+                    @keyframes backgroundfade {
+                        0% {
+                            background-position: 0% 50%
+                        }
+            
+                        50% {
+                            background-position: 100% 50%
+                        }
+            
+                        100% {
+                            background-position: 0% 50%
+                        }
+                    }
+                </style>
+            </div>
+            </main>
+            <div id="shopify-section-footer" class="shopify-section">
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__grid">
+                        <div class="footer__column footer__column--info">
+                            <div class="footer-info">
+                                <img loading="lazy" class="lazyload footer-info__logo"
+                                    data-src="/static/media/png.png"
+                                    alt="Footer Logo" />
+                                <p class="footer-info__desc">Stadorm</p>
+                                <div class="footer-info__social-logos">
+                                    <a class="footer-info__social-logo" href="https://instagram.com/joinstadorm"
+                                        target="_blank" rel="noopener" aria-label="Instagram">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
-                                                d="M11.9199 0L11.0398 0.990991L13.728 4.29054H0V5.73198H13.704L11.0398 9.00901L11.9199 10L16 5L11.9199 0Z"
+                                                d="M4.64423 0C2.08654 0 0 2.08654 0 4.64423V11.3558C0 13.9135 2.08654 16 4.64423 16H11.3558C13.9135 16 16 13.9135 16 11.3558V4.64423C16 2.08654 13.9135 0 11.3558 0H4.64423ZM4.64423 1.23077H11.3558C13.2476 1.23077 14.7692 2.75 14.7692 4.64423V11.3558C14.7692 13.2476 13.25 14.7692 11.3558 14.7692H4.64423C2.7524 14.7692 1.23077 13.25 1.23077 11.3558V4.64423C1.23077 2.7524 2.75 1.23077 4.64423 1.23077ZM12.6154 2.46154C12.1058 2.46154 11.6923 2.875 11.6923 3.38462C11.6923 3.89423 12.1058 4.30769 12.6154 4.30769C13.125 4.30769 13.5385 3.89423 13.5385 3.38462C13.5385 2.875 13.125 2.46154 12.6154 2.46154ZM8 3.69231C5.6274 3.69231 3.69231 5.6274 3.69231 8C3.69231 10.3726 5.6274 12.3077 8 12.3077C10.3726 12.3077 12.3077 10.3726 12.3077 8C12.3077 5.6274 10.3726 3.69231 8 3.69231ZM8 4.92308C9.70673 4.92308 11.0769 6.29327 11.0769 8C11.0769 9.70673 9.70673 11.0769 8 11.0769C6.29327 11.0769 4.92308 9.70673 4.92308 8C4.92308 6.29327 6.29327 4.92308 8 4.92308Z"
                                                 fill="#262626" />
                                         </svg>
-                                    </button>
+                                    </a>
+                                    <a class="footer-info__social-logo" href="https://facebook.com/stadorm"
+                                        target="_blank" rel="noopener" aria-label="Facebook">
+                                        <svg width="8" height="16" viewBox="0 0 8 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 5.60003H5.32067V4.00004C5.32067 3.17444 5.38451 2.65444 6.50869 2.65444H7.92855V0.11045C7.23762 0.0352499 6.5429 -0.00155 5.84741 4.99998e-05C3.78527 4.99998e-05 2.28029 1.32565 2.28029 3.75924V5.60003H0V8.80002L2.28029 8.79922V16H5.32067V8.79762L7.65112 8.79682L8 5.60003Z"
+                                                fill="#262626" />
+                                        </svg>
+                                    </a>
                                 </div>
-                                <div class="newsletter-form__messages">
-                                    <div class="newsletter-form__success-message" style="display:none;">
-                                        <p class="newsletter-form__thankyou">Thank you for signing up! 🙏
-                                        </p>
+                                <div class="footer-info__email">
+                                    <p class="footer-info__email-title">Need Help?</p>
+                                    <a class="footer-info__email-link"
+                                        href="mailto:hello@stadorm.com">hello@stadorm.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__column footer__column--nav">
+                            <div class="footer__nav">
+                                <div class="footer-menu">
+                                    <div class="footer-links">
+                                        <div class="footer-links__title">Careers</div>
+                                        <a href="#" class="footer-links__item">Full Time Job</a>
+                                        <a href="#" class="footer-links__item">Internships</a>
+                                        <a href="#" class="footer-links__item">Work From Home</a>
                                     </div>
-                                    <div class="newsletter-form__error-message" style="display:none;"></div>
+                                    <div class="footer-links">
+                                        <div class="footer-links__title">Company</div>
+                                        <a href="#" class="footer-links__item">About Us</a>
+                                        <a href="#" class="footer-links__item">Subscribe</a>
+                                        <a href="#" class="footer-links__item">Affiliates</a>
+                                        <a href="#" class="footer-links__item">FAQ's</a>
+                                    </div>
                                 </div>
-                            </form>
+                                <div class="footer-accordions">
+                                    <div class="footer-accordions__item">
+                                        <div class="footer-accordions__tab" aria-expanded="false">
+                                            <div class="footer-accordions__tab-title">Careers</div>
+                                            <span class="footer-accordions__tab-icon" aria-hidden="true"></span>
+                                        </div>
+                                        <div class="footer-accordions__content">
+                                            <div class="footer-accordions__links"><a href="#"
+                                                    class="footer-links__item">Full Time Job</a><a
+                                                    href="#" class="footer-links__item">Internships</a><a href="#"
+                                                    class="footer-links__item">Work From Home</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="footer-accordions__item">
+                                        <div class="footer-accordions__tab" aria-expanded="false">
+                                            <div class="footer-accordions__tab-title">Company</div>
+                                            <span class="footer-accordions__tab-icon" aria-hidden="true"></span>
+                                        </div>
+                                        <div class="footer-accordions__content">
+                                            <div class="footer-accordions__links"><a href="#"
+                                                    class="footer-links__item">About Us</a><a href="/subscription.html"
+                                                    class="footer-links__item">Subscribe</a><a href="/careers.html"
+                                                    class="footer-links__item">Affiliates</a><a href="faq.html"
+                                                    class="footer-links__item">FAQ's</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__column footer__column--newsletter">
+            
+                            <div class="newsletter">
+                                <div class="newsletter__titles">
+                                    <h2 class="newsletter__title">Get 15% off on your booking!</h2>
+                                    <p class="newsletter__subtitle">Sign up to our newsletter and get a chance to win
+                                        15% off on your booking.</h2>
+                                    <div>
+                                        <form id="email_signup" class="newsletter-form"
+                                            action="#" method="GET"
+                                            target="_blank" novalidate="novalidate">
+                                            <input type="hidden" name="g" value="RLeEEn">
+                                            <input type="hidden" name="$fields" value="email">
+                                            <input type="hidden" name="$list_fields" value="web">
+                                            <div class="newsletter-form__field">
+                                                <input class="newsletter-form__input" type="email" value="" name="email"
+                                                    id="k_id_email" placeholder="Enter Your Email Here" />
+                                                <button type="submit" class="newsletter-form__button">
+                                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.9199 0L11.0398 0.990991L13.728 4.29054H0V5.73198H13.704L11.0398 9.00901L11.9199 10L16 5L11.9199 0Z"
+                                                            fill="#262626" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="newsletter-form__messages">
+                                                <div class="newsletter-form__success-message" style="display:none;">
+                                                    <p class="newsletter-form__thankyou">Thank you for signing up! 🙏
+                                                    </p>
+                                                </div>
+                                                <div class="newsletter-form__error-message" style="display:none;"></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="footer-copyrights">
+                        <div class="footer-copyrights__claim-wrapper">
+                            <p class="footer-copyrights__claim">*All pictures are shown for illustration purpose only, actual product may vary due to product enhancement.</p>
+                        </div>
+                    </div>
+                    <div class="footer-copyrights__columns">
+                        <div class="footer-copyrights__company">© Stadorm, 2021. All Rights Reserved.</div>
+                        <div class="footer-copyrights__legals">
+                            <a class="footer-copyrights__legal" href="#">Terms of Use</a>
+                            <a class="footer-copyrights__legal" href="#">Privacy Policy</a>
+                            <a class="footer-copyrights__legal" href="#">Refund Policy</a>
+                            <a class="footer-copyrights__legal" href="#">Subscription Policy</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="footer-copyrights">
-            <div class="footer-copyrights__claim-wrapper">
-                <p class="footer-copyrights__claim">*All pictures are shown for illustration purpose only, actual product may vary due to product enhancement.</p>
-            </div>
-        </div>
-        <div class="footer-copyrights__columns">
-            <div class="footer-copyrights__company">© Stadorm, 2021. All Rights Reserved.</div>
-            <div class="footer-copyrights__legals">
-                <a class="footer-copyrights__legal" href="#">Terms of Use</a>
-                <a class="footer-copyrights__legal" href="#">Privacy Policy</a>
-                <a class="footer-copyrights__legal" href="#">Refund Policy</a>
-                <a class="footer-copyrights__legal" href="#">Subscription Policy</a>
-            </div>
-        </div>
     </div>
 </div>
-</div>
-</div>
-<script src="/static/js/main.js" defer></script>
+<script src="{%  static  '/js/main.js'  %}" defer></script>
 </body>
 </html>
