@@ -101,7 +101,21 @@ def rooms(request,userId, username):
 def details(request,userId,username,productId):
     if (request.method == 'POST'):
         return redirect('/checkout/'+str(userId)+'/'+str(username)+'/'+str(productId)+'/')
-    return render(request,'details.html',context={'userId':userId,'username':username,'productId':productId})
+    db = mysql.connector.connect(
+                host='bkswbs4odw5c3n23xb77-mysql.services.clever-cloud.com',
+                username='ucvuplrivukdot0v',
+                password='2yEAa5V6jv16Bm1d6sq7',
+                database='bkswbs4odw5c3n23xb77'
+            )
+    cur = db.cursor()
+    sql = "SELECT * FROM Product where productId = '"+str(productId)+"';"
+    cur.execute(sql)
+    a = cur.fetchall()
+    a = list(a[0])
+    images = json.loads(a[5])
+    db.commit()
+    
+    return render(request,'details.html',context={'userId':userId,'username':username,'productId':productId,'a':a,'images':images})
 
 def checkout(request,userId,username,productId):
     return render(request,'checkout.html')
