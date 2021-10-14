@@ -13,13 +13,16 @@ def add_user(fname,lname,email,password,username):
 
     # sql = "INSERT INTO sql6443052.User (fname, lname, email, password, username) VALUE ('"+fname+"','"+lname+"','"+email+"','"+password+"','"+username+"');"
     # sql = "SELECT * FROM User where email='test@test.com';"
-    sql = "SELECT * FROM Product WHERE type = 'r';"
+    # sql = "SELECT * FROM Product WHERE type = 'r';"
+    sql = "SELECT * FROM Product where productId = '"+str(1)+"';"
     cur.execute(sql)
     a = cur.fetchall()
-    a = [list(i) for i in a]
-    for i in range(len(a)):    
-        a[i].append(json.loads(a[i][5])[0])
+    # a = [list(i) for i in a]
+    a = list(a[0])
+    images = json.loads(a[5])
+    # images = json.loads(a[0][5])
     print(a)
+    print(images)
     db.commit()
 
 add_user('test','test','test@test.com','1234','test')
