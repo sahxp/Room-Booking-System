@@ -96,11 +96,29 @@ def home(request,userId, username):
     return render(request,'index.html',context={'userId':userId,'username':username,'a':a})
 
 def rooms(request,userId, username):
-    return render(request,'rooms.html',context={'userId':userId,'username':username})
+    db = mysql.connector.connect(
+                host='bkswbs4odw5c3n23xb77-mysql.services.clever-cloud.com',
+                username='ucvuplrivukdot0v',
+                password='2yEAa5V6jv16Bm1d6sq7',
+                database='bkswbs4odw5c3n23xb77'
+            )
+    cur = db.cursor()
+    sql = "SELECT * FROM Product WHERE type = 'r';"
+    cur.execute(sql)
+    a = cur.fetchall()
+    a = list([list(i) for i in a])
+    for i in range(len(a)):    
+        a[i].append(json.loads(a[i][5])[0])
+    return render(request,'rooms.html',context={'userId':userId,'username':username,'a':a})
 
 def details(request,userId,username,productId):
     if (request.method == 'POST'):
-        return redirect('/checkout/'+str(userId)+'/'+str(username)+'/'+str(productId)+'/')
+        pag.alert(request.POST.get("subscription"))
+        if request.POST.get("subscription") == 'true':
+            length = request.POST.get("length")
+        else:
+            length = 0
+        return redirect('/checkout/'+str(userId)+'/'+str(username)+'/'+str(productId)+'/'+str(length)+'/')
     db = mysql.connector.connect(
                 host='bkswbs4odw5c3n23xb77-mysql.services.clever-cloud.com',
                 username='ucvuplrivukdot0v',
@@ -117,7 +135,16 @@ def details(request,userId,username,productId):
     
     return render(request,'details.html',context={'userId':userId,'username':username,'productId':productId,'a':a,'images':images})
 
-def checkout(request,userId,username,productId):
+def checkout(request,userId,username,productId,length):
+    if (request.method == 'POST'):
+        db = mysql.connector.connect(
+                host='bkswbs4odw5c3n23xb77-mysql.services.clever-cloud.com',
+                username='ucvuplrivukdot0v',
+                password='2yEAa5V6jv16Bm1d6sq7',
+                database='bkswbs4odw5c3n23xb77'
+            )
+        cur = db.cursor()
+        
     return render(request,'checkout.html')
 
 def subscription(request,userId, username):
