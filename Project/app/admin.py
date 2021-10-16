@@ -5,3 +5,4 @@ from .models import User, Product, Transaction
 admin.site.register(User)
 admin.site.register(Product)
 admin.site.register(Transaction)
+admin.site.site_header = 'Stadorm'
