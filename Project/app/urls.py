@@ -8,6 +8,6 @@ urlpatterns = [
     path('<int:userId>/<str:username>/',views.home,name='Home'),
     path('rooms/<int:userId>/<str:username>/',views.rooms,name='Rooms'),
     path('checkout/<int:userId>/<str:username>/<int:productId>/<int:length>/',views.checkout,name='Checkout'),
-    path('confirmation/<int:userId>/<str:username>/<int:productId>/',views.confirmation,name='Confirmation'),
+    path('confirmation/<int:userId>/<str:username>/<int:productId>/<int:transactionId>/',views.confirmation,name='Confirmation'),
     path('subscription/<int:userId>/<str:username>/',views.subscription,name='Subscription'),
 ]
