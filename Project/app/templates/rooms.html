@@ -107,21 +107,23 @@
     <h1 class="collection-page__title">Stays in Pune</h1>
     <p class="collection-page__desc">Currently available in Pimpri-Chinchwad, Pune</p>
     <div class="collection-page__products">
-      
-        <a href="/details/{{userId}}/{{username}}/1" class="homepage-products-card">
+
+{% for i in a %}   
+<a href="/details/{{userId}}/{{username}}/{{i.0}}" class="homepage-products-card">
     <div class="homepage-products-card__image">
-        <img class="lazyload" src="https://ihouse.unimelb.edu.au/__data/assets/image/0004/3014824/Scheps-174.jpg" alt="Product Image">
+        <img class="lazyload" src="{{i.8}}" alt="Product Image">
     </div>
-    <div class="homepage-products-card__body">
+    <div class="homepage-products-card__body">  
         <h2 class="homepage-products-card__title">
-            Stadorm A001
+            {{i.1}}
         </h2>
-        <p class="homepage-products-card__desc">Akurdi, Pune</p>
+        <p class="homepage-products-card__desc">{{i.6}}</p>
     </div>
-    <div data-product-variant-id="38122287202478" data-product-add-to-cart class="homepage-products-card__button button button--invert">₹3,999  <span>|</span>  Schedule a visit</div>
-</a>
+    <div data-product-variant-id="38122287202478" data-product-add-to-cart class="homepage-products-card__button button button--invert">₹{{i.4}}  <span>|</span>  Schedule a visit</div>
+</a>    
+{% endfor %}
       
-        <a href="/details/{{userId}}/{{username}}/1" class="homepage-products-card">
+<!--        <a href="/details/{{userId}}/{{username}}/1" class="homepage-products-card">
     <div class="homepage-products-card__image">
         <img class="lazyload" src="https://miro.medium.com/max/8576/1*p1zBnv11CSx_EII8sB9Uaw.jpeg" alt="Product Image">
     </div>
@@ -145,7 +147,7 @@
         <p class="homepage-products-card__desc">Nigdi, Pune</p>
     </div>
     <div data-product-variant-id="38122293297326" data-product-add-to-cart class="homepage-products-card__button button button--invert">₹3,999  <span>|</span>  Schedule a visit</div>
-</a>
+</a>-->
       
     </div>
   </div>

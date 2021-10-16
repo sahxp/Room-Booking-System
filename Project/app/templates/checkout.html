@@ -101,6 +101,12 @@
     </div>
   <div data-scroll-container>
     <main class="main" role="main">
+    {% if messages %}
+    {% for message in messages %}
+      {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+    {% endfor %}
+        
+    {% endif%}
     <div class="container">
         <div class="signup-page__container">
           <div class="product-template">
@@ -117,8 +123,8 @@
                 <div class="product-content">
                   <div class="signup-page__form">
                     <h3>Contact information</h3>
-                    <form method="post" action="/account" id="create_customer" accept-charset="UTF-8"><input type="hidden" name="form_type" value="create_customer" /><input type="hidden" name="utf8" value="✓" />
-                    
+                    <form method="post"  id="create_customer" accept-charset="UTF-8"><input type="hidden" name="form_type" value="create_customer" /><input type="hidden" name="utf8" value="✓" />
+                    {% csrf_token %}
                     <div class="field-group">
                         <fieldset class="field">
                             <label class="field__label" for="first_name">First Name</label>
@@ -135,7 +141,7 @@
                   </fieldset>
                   <fieldset class="field">
                     <label class="field__label" for="number">Phone Number</label>
-                    <input class="field__input" type="number" value="" name="customer[email]" size="30" />
+                    <input class="field__input" type="number" value="" name="customer[number]" size="30" />
                 </fieldset>
                     <button class="button" type="submit"/>Confirm</button>
                     </form>

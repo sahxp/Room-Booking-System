@@ -264,7 +264,7 @@
                             <p><strong>{{a.6}}</strong></p>
                         </div>
                         <div class="product-content__form">
-                            <form id="AddToCartForm" action="/checkout/{{userId}}/{{username}}/{{productId}}/" method="post" enctype="multipart/form-data">
+                            <form id="AddToCartForm" action="" method="post" enctype="multipart/form-data">
                                 {% csrf_token %}
                                 <input type="hidden" name="id" value="38122290380974" />
                                 <input type="hidden" name="quantity" value="1" min="1">
@@ -303,7 +303,7 @@
 
                                                 <div class="product-recharge-selector__frequency" data-percentage="15">
                                                     <input class="product-recharge-selector__frequency-input"
-                                                        id="4 Months" type="radio" name="selling_plan" value="63930542"
+                                                        id="4 Months" type="radio" name="length" value="4"
                                                         checked />
                                                     <label class="product-recharge-selector__frequency-label"
                                                         for="4 Months">4 Months</label>
@@ -311,15 +311,15 @@
 
                                                 <div class="product-recharge-selector__frequency" data-percentage="15">
                                                     <input class="product-recharge-selector__frequency-input"
-                                                        id="8 Months" type="radio" name="selling_plan"
-                                                        value="63963310" />
+                                                        id="8 Months" type="radio" name="length"
+                                                        value="8" />
                                                     <label class="product-recharge-selector__frequency-label"
                                                         for="8 Months">8 Months</label>
                                                 </div>
 
                                                 <div class="product-recharge-selector__frequency" data-percentage="15">
                                                     <input class="product-recharge-selector__frequency-input"
-                                                        id="1 Year" type="radio" name="selling_plan" value="64159918" />
+                                                        id="1 Year" type="radio" name="length" value="12" />
                                                     <label class="product-recharge-selector__frequency-label"
                                                         for="1 Year">1 Year</label>
                                                 </div>
