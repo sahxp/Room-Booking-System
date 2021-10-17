@@ -142,6 +142,7 @@ def checkout(request,userId,username,productId,length):
                 password='2yEAa5V6jv16Bm1d6sq7',
                 database='bkswbs4odw5c3n23xb77'
             )
+    cur = db.cursor()
     if (request.method == 'POST'):
         email = request.POST.get("customer[email]")
         fname = request.POST.get("customer[first_name]")
@@ -153,13 +154,14 @@ def checkout(request,userId,username,productId,length):
             return render(request,'checkout.html')
         now = datetime.now()
         date = now.strftime("%Y-%m-%d")
-        cur = db.cursor()
         sql = "SELECT * FROM Product where productId = '"+str(productId)+"';"
         cur.execute(sql)
         a = cur.fetchall()
         a = list(a[0])
         type = a[3]
         amount = a[4]
+        if length == 0:
+            amount = 0
         sql = f"INSERT INTO Transaction (productId,date,length,type,amount,fname,lname,email,number) VALUE ({productId},'{date}',{length},'{type}',{amount},'{fname}','{lname}','{email}','{number}');"
         cur.execute(sql)
         db.commit()
@@ -169,10 +171,29 @@ def checkout(request,userId,username,productId,length):
         transactionId = list(a[0])[0]
         db.commit()
         return redirect(f'/confirmation/{userId}/{username}/{productId}/{transactionId}/')
-    return render(request,'checkout.html')
+    
+    sql = f"SELECT * FROM Product where productId = {productId}"
+    cur.execute(sql)
+    a = cur.fetchall()
+    a = list(a[0])
+    image = json.loads(a[5])[0]
+    
+    return render(request,'checkout.html',{'userId':userId,'username':username,'a':a,'image':image})
 
 def subscription(request,userId, username):
-    return render(request,'subscription.html')
+    return render(request,'subscription.html',{'userId':userId,'username':username})
 
 def confirmation(request,userId,username,productId,transactionId):
-    return render(request,'confirmation.html')
+    db = mysql.connector.connect(
+                host='bkswbs4odw5c3n23xb77-mysql.services.clever-cloud.com',
+                username='ucvuplrivukdot0v',
+                password='2yEAa5V6jv16Bm1d6sq7',
+                database='bkswbs4odw5c3n23xb77'
+            )
+    cur = db.cursor()
+    sql = f"SELECT * FROM Transaction Where transactionId = {transactionId};"
+    cur.execute(sql)
+    a = cur.fetchall()
+    a = list(a[0])
+
+    return render(request,'confirmation.html',{'a':a})
