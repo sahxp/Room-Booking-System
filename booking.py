@@ -19,15 +19,17 @@ def add_user(fname,lname,email,password,username,productId):
     # now = datetime.now()
     # date = now.strftime("%Y-%m-%d")
     # sql = f"INSERT INTO Transaction (productId,date,length,type,amount,fname,lname,email,number) VALUE ({productId},'{date}',4,'r',3999,'{fname}','{lname}','{email}','{number}')"
-    sql = "SELECT transactionId FROM Transaction ORDER BY transactionId DESC LIMIT 1;"
+    # sql = "SELECT transactionId FROM Transaction ORDER BY transactionId DESC LIMIT 1;"
+    sql = f"SELECT * FROM Product where productId = {productId}"
     cur.execute(sql)
     a = cur.fetchall()
     # a = [list(i) for i in a]
     #a = list(a[0])
     #images = json.loads(a[5])
     # images = json.loads(a[0][5])
-    transactionId = list(a[0])[0]
-    print(transactionId)
+    # transactionId = list(a[0])[0]
+    a = list(a[0])
+    print(a)
     #print(images)
     db.commit()
 
