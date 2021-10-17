@@ -11,6 +11,9 @@ class Product(models.Model):
     location = models.CharField(db_column='Location', max_length=45, blank=True, null=True)  # Field name made lowercase.
     address = models.TextField(blank=True, null=True)
 
+    def __str__(self):
+        return f"{self.title} ({self.productid})"
+
     class Meta:
         managed = False
         db_table = 'Product'
