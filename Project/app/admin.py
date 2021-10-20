@@ -6,3 +6,5 @@ admin.site.register(User)
 admin.site.register(Product)
 admin.site.register(Transaction)
 admin.site.site_header = 'Stadorm'
+admin.site.index_title = 'Stadorm'
+admin.site.site_title = 'Admin Dashboard'
